@@ -1,0 +1,89 @@
+# #
+# # ~/.bashrc-personal
+# #
+
+# # My changes
+# #export EDITOR='vim'
+# #export VISUAL='vim'
+
+
+# # ignore upper and lowercase when TAB completion
+# bind "set completion-ignore-case on"
+
+# #list
+# alias ls='ls --color=auto'
+# alias la='ls -a'
+# alias ll='ls -la'
+# alias l='ls'
+# alias l.="ls -A | egrep '^\.'"
+
+# ## Colorize the grep command output for ease of use (good for log files)##
+# alias grep='grep --color=auto'
+# alias egrep='egrep --color=auto'
+# alias fgrep='fgrep --color=auto'
+
+# #readable output
+# alias df='df -h'
+
+# # Aliases for software managment
+# # pacman or pm
+# alias pacman='sudo pacman --color auto'
+# alias update='sudo pacman -Syyu'
+# alias upall='paru -Syu --noconfirm'
+# alias yay='paru --color auto'
+
+# #quickly kill conkies
+# alias kc='killall conky'
+
+# #give the list of all installed desktops - xsessions desktops
+# alias xd="ls /usr/share/xsessions"
+
+# #shopt
+# shopt -s autocd # change to named directory
+# shopt -s cdspell # autocorrects cd misspellings
+# shopt -s cmdhist # save multi-line commands in history as single line
+# shopt -s dotglob
+# shopt -s histappend # do not overwrite history
+# shopt -s expand_aliases # expand aliases
+
+# neofetch
+
+# Virustotal key
+export VT_API_KEY='79748fa16e93bdd2b84a200721e5499f02cbaa7dae2d9bb6cbbf7b907c677a98'
+
+#rclone syncs[Online]
+alias Text-sync="rclone sync -i /home/leosmith/Text/ GDrive-Text:Text"
+alias Database="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Downloads/This\ be\ it.kdbx GDrive-Text:DB"
+alias backup-folder="rclone sync  /home/leosmith/Backup/ GDrive-Text:Linux\ Config\ Files/Manjaro\(current\)/ -i -L"
+alias Programming-backup="rclone sync /home/leosmith/Text\ Editor\ Stuff/ GDrive-Text:Text\ Editor\ Stuff/ -i"
+# alias virtualrunner-gtr="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
+alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
+
+#rclone syncs[Offline]
+alias local-application-folder-sync="rclone copy /home/leosmith/Stuff\ To\ Do/Application/ /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/Linux\ Application\ Folder/ -Li"
+
+# Directories
+alias Pystuff="cd /home/leosmith/Text\ Editor\ Stuff/"
+alias Text="cd /home/leosmith/Text/"
+alias CMU="cd $HOME/Desktop/CMU\ Docs/"
+alias Application="cd $HOME/Desktop/Application/"
+alias desktop_win="cd /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/"
+
+# Misc
+alias at="alacritty-themes"
+# Python Programming Stuff
+alias KIVY="source venv/bin/activate"
+alias GALAXY="source venv/bin/activate"
+
+# Shortening
+alias lmr="ls -rt"
+
+# Git Stuff
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+
+# Making the History size infinite
+HISTSIZE= HISTFILESIZE=
+
+# Pyenv init
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
