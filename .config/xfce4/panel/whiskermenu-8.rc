@@ -1,5 +1,5 @@
 favorites=xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop,com.obsproject.Studio.desktop,org.onlyoffice.desktopeditors.desktop,libreoffice-writer.desktop,q4wine.desktop,PlayOnLinux.desktop,org.manjaro.pamac.manager.desktop,org.rnd2.cpupower_gui.desktop,simplenote.desktop
-recent=simplenote.desktop,org.midori_browser.Midori.desktop,xfce4-web-browser.desktop,xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-mail-reader.desktop,mpv.desktop,io.github.celluloid_player.Celluloid.desktop,org.onlyoffice.desktopeditors.desktop,org.gnome.Calculator.desktop
+recent=xfce4-terminal-emulator.desktop,dev-kinsta.desktop,xfce4-file-manager.desktop,VSCodium.desktop,simplenote.desktop,org.midori_browser.Midori.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop,mpv.desktop,io.github.celluloid_player.Celluloid.desktop
 button-icon=/usr/share/icons/whiskermenu-manjaro.svg
 button-single-row=false
 show-button-title=false
@@ -21,8 +21,8 @@ position-commands-alternate=true
 position-categories-alternate=true
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=472
-menu-height=581
+menu-width=512
+menu-height=711
 menu-opacity=95
 command-settings=xfce4-settings-manager
 show-command-settings=true

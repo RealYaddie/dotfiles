@@ -163,7 +163,7 @@ alias df='df -h'
 # Aliases for software managemet
 
 #pacman or pm
-alias pacman="sudo pacman --color=auto"
+alias pacman='pacman --color=auto'
 alias update='sudo pacman -Syyu'
 alias upall='paru -Syu --noconfirm'
 alias yay='yay --color auto'

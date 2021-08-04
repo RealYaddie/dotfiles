@@ -54,7 +54,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;t" type="string" value="xfce4-terminal"/>
       <property name="F12" type="string" value="xfce4-terminal --drop-down"/>
       <property name="&lt;Super&gt;v" type="string" value="pavucontrol"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -nb &apos;#1B2224&apos; -nf &apos;#2EB398&apos; -sb &apos;#2EB398&apos; -sf &apos;#1B2224&apos;  -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;c" type="string" value="fsearch"/>
       <property name="Print" type="string" value="flameshot gui"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="xfce4-display-settings --minimal"/>
@@ -73,6 +72,7 @@
       </property>
       <property name="&lt;Alt&gt;grave" type="string" value="mailspring"/>
       <property name="&lt;Super&gt;grave" type="string" value="xfce4-keyboard-settings"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -p &apos;Run:&apos; -nb &apos;#1B2224&apos; -nf &apos;#2EB398&apos; -sb &apos;#2EB398&apos; -sf &apos;#1B2224&apos;  -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

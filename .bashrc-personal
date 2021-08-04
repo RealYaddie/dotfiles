@@ -2,7 +2,7 @@
 # # ~/.bashrc-personal
 # #
 
-# # My changes
+# # Editors
 # #export EDITOR='vim'
 # #export VISUAL='vim'
 
@@ -51,7 +51,7 @@
 # Virustotal key
 export VT_API_KEY='79748fa16e93bdd2b84a200721e5499f02cbaa7dae2d9bb6cbbf7b907c677a98'
 
-#rclone syncs[Online]
+# rclone Online
 alias Text-sync="rclone sync -i /home/leosmith/Text/ GDrive-Text:Text"
 alias Database="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Downloads/This\ be\ it.kdbx GDrive-Text:DB"
 alias backup-folder="rclone sync  /home/leosmith/Backup/ GDrive-Text:Linux\ Config\ Files/Manjaro\(current\)/ -i -L"
@@ -59,18 +59,28 @@ alias Programming-backup="rclone sync /home/leosmith/Text\ Editor\ Stuff/ GDrive
 # alias virtualrunner-gtr="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
 alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
 
-#rclone syncs[Offline]
+# rclone Offline
 alias local-application-folder-sync="rclone copy /home/leosmith/Stuff\ To\ Do/Application/ /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/Linux\ Application\ Folder/ -Li"
+alias GTR-VR="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/Global\ TalesRunner/VirtualRunner /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/Global\ VirtualRunner"
+alias GTR-SS="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/Global\ TalesRunner/Screenshot /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/Global\ Screenshots"
+alias backup-talesrunner="GTR-VR && GTR-SS && talesrunner_backup-gtr"
 
 # Directories
-alias Pystuff="cd /home/leosmith/Text\ Editor\ Stuff/"
-alias Text="cd /home/leosmith/Text/"
+alias Pystuff="cd $HOME/Text\ Editor\ Stuff/"
+alias Text="cd $HOME/Text/"
+alias text-markdown="cd $HOME/Text/Markdown Notes/"
 alias CMU="cd $HOME/Desktop/CMU\ Docs/"
 alias Application="cd $HOME/Desktop/Application/"
 alias desktop_win="cd /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/"
+alias mark-text="cd $HOME/Text/Markdown\ Notes/"
+
+# Docker Commands
+alias docker-start="systemctl start --now docker.service docker.socket tccd.service tccd-sleep.service"
+alias docker-close="systemctl stop --now docker.service docker.socket tccd.service tccd-sleep.service"
 
 # Misc
 alias at="alacritty-themes"
+
 # Python Programming Stuff
 alias KIVY="source venv/bin/activate"
 alias GALAXY="source venv/bin/activate"
