@@ -75,7 +75,9 @@ nnoremap <leader><CR> :noh<CR>
 " Terminal Remaps
 tnoremap <Esc> <C-\><C-n>
 
-set title   " Change the terminal's title
+set title "Change the terminal's title
+let &titleold="st"
+
 set showmatch   " set show matching parenthesis
 " }}}
 " Scrolling {{{
