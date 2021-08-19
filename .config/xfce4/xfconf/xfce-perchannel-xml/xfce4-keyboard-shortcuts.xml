@@ -59,7 +59,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Super&gt;x" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Super&gt;d" type="string" value="kdocker"/>
-      <property name="&lt;Super&gt;Return" type="string" value="st"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;e" type="string" value="whatsdesk"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="whatsapp-web"/>
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
@@ -73,6 +72,9 @@
       <property name="&lt;Alt&gt;grave" type="string" value="mailspring"/>
       <property name="&lt;Super&gt;grave" type="string" value="xfce4-keyboard-settings"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -p &apos;Run:&apos; -nb &apos;#1B2224&apos; -nf &apos;#2EB398&apos; -sb &apos;#2EB398&apos; -sf &apos;#1B2224&apos;  -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="sh /home/leosmith/scripts/move-to-workspace2.sh"/>
+      <property name="&lt;Super&gt;Return" type="string" value="st"/>
+      <property name="&lt;Alt&gt;Return" type="string" value="alacritty"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

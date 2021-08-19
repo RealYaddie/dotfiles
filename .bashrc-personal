@@ -89,6 +89,8 @@ alias GALAXY="source venv/bin/activate"
 alias lmr="ls -rt"
 alias audio-youtubedl="youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
 alias video-general-youtubedl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio'"
+alias mpv-720p="mpv --ytdl-format=22"
+alias mpv-1080p="mpv --ytdl-format=18"
 
 # Git Stuff
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'

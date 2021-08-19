@@ -12,5 +12,8 @@
     <property name="inactivity-on-ac" type="uint" value="14"/>
     <property name="dpms-on-ac-sleep" type="uint" value="19"/>
     <property name="dpms-on-ac-off" type="uint" value="20"/>
+    <property name="blank-on-ac" type="int" value="15"/>
+    <property name="brightness-level-on-ac" type="uint" value="80"/>
+    <property name="brightness-on-ac" type="uint" value="9"/>
   </property>
 </channel>

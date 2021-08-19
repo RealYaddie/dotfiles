@@ -4,7 +4,8 @@ st.alphaOffset: 0.3
 
 !! Set a default font and font size as below:
 /* st.font: Monospace-11; */
-st.font: Hack-12;
+/* st.font: Hack-12; */
+st.font: CaskaydiaCove Nerd Font-12
 
 ! st.termname: st-256color
 ! st.borderpx: 2
