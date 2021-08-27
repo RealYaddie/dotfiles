@@ -2,6 +2,7 @@
 # ~/.bashrc
 #
 
+# If not running interactively, don't do anything.
 [[ $- != *i* ]] && return
 
 colors() {
@@ -31,6 +32,9 @@ colors() {
 	done
 }
 
+# Checks if the bash_completion file is readable and then sources the file if it is
+# the "." with a space after it is the same as typing "source" (internal shell
+# command)
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 # Change the window title of X terminals
