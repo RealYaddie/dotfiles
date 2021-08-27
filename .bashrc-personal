@@ -72,11 +72,15 @@ alias text-markdown="cd $HOME/Text/Markdown Notes/"
 alias CMU="cd $HOME/Desktop/CMU\ Docs/"
 alias Application="cd $HOME/Desktop/Application/"
 alias desktop_win="cd /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/"
+alias other-drive="cd /run/media/leosmith/1404235A04233E5C/"
 alias mark-text="cd $HOME/Text/Markdown\ Notes/"
 
 # Docker Commands
 alias docker-start="systemctl start --now docker.service docker.socket tccd.service tccd-sleep.service"
 alias docker-close="systemctl stop --now docker.service docker.socket tccd.service tccd-sleep.service"
+
+# KDEconnect commands
+alias kdeconnect-close="killall kdeconnectd kdeconnect-indicator"
 
 # Misc
 alias at="alacritty-themes"
