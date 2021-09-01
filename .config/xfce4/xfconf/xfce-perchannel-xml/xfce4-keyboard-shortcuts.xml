@@ -75,6 +75,10 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="sh /home/leosmith/scripts/move-to-workspace2.sh"/>
       <property name="&lt;Super&gt;Return" type="string" value="st"/>
       <property name="&lt;Alt&gt;Return" type="string" value="alacritty"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;d" type="string" value="discord"/>
+      <property name="&lt;Super&gt;l" type="string" value="lowriter"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="libreoffice"/>
+      <property name="&lt;Super&gt;e" type="string" value="evince"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
