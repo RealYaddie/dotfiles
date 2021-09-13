@@ -1,0 +1,12 @@
+#!/bin/bash
+
+check=$(xrandr | awk '/^LVDS/ {print $1}')
+match="LVDS1"
+
+if [ "$check" = "$match" ]; then
+    match="LVDS1"
+else
+    match="LVDS-1"
+fi
+
+xfce4-terminal --command="xrandr --output $match --panning 1600x900 --scale 1.171x1.171"

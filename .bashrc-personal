@@ -2,9 +2,15 @@
 # # ~/.bashrc-personal
 # #
 
-# # Editors
-# #export EDITOR='vim'
-# #export VISUAL='vim'
+# Editors
+#export EDITOR='vim'
+#export VISUAL='vim'
+
+# Get colorized output for `man` pages with `bat`
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"  
+
+# Activating vi mode in bash
+set -o vi
 
 
 # # ignore upper and lowercase when TAB completion
@@ -92,7 +98,8 @@ alias GALAXY="source venv/bin/activate"
 # Shortening
 alias lmr="ls -rt"
 alias audio-youtubedl="youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
-alias video-general-youtubedl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio'"
+alias video-best-youtubedl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio'"
+alias video-720p-youtubedl="youtube-dl -f 22"
 alias mpv-720p="mpv --ytdl-format=22"
 alias mpv-1080p="mpv --ytdl-format=18"
 

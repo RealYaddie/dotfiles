@@ -58,7 +58,6 @@
       <property name="Print" type="string" value="flameshot gui"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Super&gt;x" type="string" value="xfce4-session-logout"/>
-      <property name="&lt;Super&gt;d" type="string" value="kdocker"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;e" type="string" value="whatsdesk"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="whatsapp-web"/>
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
@@ -79,6 +78,7 @@
       <property name="&lt;Super&gt;l" type="string" value="lowriter"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="libreoffice"/>
       <property name="&lt;Super&gt;e" type="string" value="evince"/>
+      <property name="&lt;Super&gt;d" type="string" value="kdocker"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

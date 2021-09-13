@@ -124,6 +124,7 @@ nnoremap <leader>tf gt
 nnoremap <leader>tF gT
 " }}}
 " Abbreviations {{{
+nnoremap <leader>w :w<CR>
 " }}}
 " Vim-latexsuite Stuff {{{
 filetype plugin indent on

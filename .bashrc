@@ -165,11 +165,11 @@ alias fgrep='fgrep --color=auto'
 # Aliases for software managemet
 
 #pacman or pm
-alias pacman='pacman --color=auto'
+# alias pacman='pacman --color=auto'
 alias update='sudo pacman -Syyu'
 alias upall='paru -Syu --noconfirm'
-alias yay='yay --color auto'
-alias paru='paru --color auto'
+# alias yay='yay --color auto'
+# alias paru='paru --color auto'
 alias pamup="pamac upgrade --aur"
 # alias pacup="sudo pacman -Syu"
 
