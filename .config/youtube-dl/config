@@ -1,0 +1,16 @@
+# Comfig additions Inspired by Rafael Cavalcanti - rafaelc.org
+
+# Path to yt cookies
+#--cookies="$HOME/.config/youtube-dl/youtube.com_cookies.txt"
+
+# Download only the video, if the URL refers to a video and a playlist.
+--no-playlist
+
+# Write metadata to the video file
+--add-metadata
+
+# Download and embed subs
+--embed-subs --all-subs
+
+# Truncate long file names to avoid filesystem error
+--output '%(title).150s-%(id)s.%(ext)s'

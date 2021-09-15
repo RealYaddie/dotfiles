@@ -28,4 +28,4 @@ DMENU_P="Run:"
 TERMINAL_CMD="alacritty -e"
 
 # export our variables
-DMENU="-i -p $DMENU_P -fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
+DMENU_OPTIONS="-i -p $DMENU_P -fn $DMENU_FN -nb $DMENU_NB -nf $DMENU_NF -sf $DMENU_SF -sb $DMENU_SB"
