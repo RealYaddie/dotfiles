@@ -49,11 +49,11 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 " colorscheme seoul256
 colorscheme dracula
 
+set expandtab	" tabs are spaces
 set tabstop=4	" number of visual spaces per tab
 set softtabstop=4	" number of spaces in TAB when editing
 set autoindent
 set shiftwidth=4
-set expandtab	" tabs are spaces
 set completeopt=menu,noinsert,noselect
 
 set number	" show line numbers
@@ -81,7 +81,8 @@ let &titleold="st"
 set showmatch   " set show matching parenthesis
 " }}}
 " Scrolling {{{
-inoremap <C-E> <C-X><C-E>	" scrolling on insert
+" Scrolling on insert, mapping C-E and C-Y like in normal mode
+inoremap <C-E> <C-X><C-E>
 inoremap <C-Y> <C-X><C-Y>
 set scrolloff=3	    " start scrolling down screen when 8 lines away from the bottom of it
 " }}}
@@ -120,11 +121,18 @@ map <leader>t<leader> :tabnext
 map <leader>tm :tabmove
 map <leader>tc :tabclose<CR>
 map <leader>to :tabonly<CR>
-nnoremap <leader>tf gt
-nnoremap <leader>tF gT
+" nnoremap <leader>tf gt
+" nnoremap <leader>tF gT
 " }}}
-" Abbreviations {{{
+" Shortcuts/Abbreviations {{{
 nnoremap <leader>w :w<CR>
+" Display help in new tab
+nnoremap <leader>h :tabnew<CR>:help<CR><C-w><C-w>:quit<CR>
+" Add newline without leaving normal mode and stay on the current line
+nnoremap <M-o> o<Esc>
+nnoremap <M-S-O> O<Esc>
+
+" Abbreviations
 " }}}
 " Vim-latexsuite Stuff {{{
 filetype plugin indent on

@@ -79,6 +79,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="libreoffice"/>
       <property name="&lt;Super&gt;e" type="string" value="evince"/>
       <property name="&lt;Super&gt;d" type="string" value="kdocker"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/home/leosmith/scripts/testing/env-vars.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

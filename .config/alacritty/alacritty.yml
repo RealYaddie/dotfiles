@@ -1,87 +1,54 @@
-# TERM variable
-# TERM: xterm-256color
 TERM: alacritty
-
 window:
   padding:
     x: 5
     y: 5
-
-  # Window decorations
   decorations: full
-
   title: Alacritty
-
   dynamic_title: true
-
 font:
   normal:
     family: CaskaydiaCove Nerd Font
-
   style: Regular
-  size: 12.0
-
+  size: 12
 bell:
-  # Visual Bell Animation
   animation: EaseOutExpo
   duration: 100
-
   color: "#ffffff"
-
 background_opacity: 0.92
-
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
-
-  # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
-
 cursor:
-  # Cursor style
   style:
-    # Cursor shape
-    #
-    # Values for `shape`:
-    #   - ▇ Block
-    #   - _ Underline
-    #   - | Beam
     shape: Block
-
-    # Cursor blinking state
     blinking: Off
-
     unfocused_hollow: true
-
 working_directory: None
-
 mouse:
-  # Click settings
-  double_click: { threshold: 300 }
-  triple_click: { threshold: 300 }
+  double_click:
+    threshold: 300
+  triple_click:
+    threshold: 300
 colors:
-  # Default colors
   primary:
-    background: '#282a36'
-    foreground: '#f8f8f2'
-
-  # Normal colors
+    background: "#282a36"
+    foreground: "#f8f8f2"
   normal:
-    black: '#000000'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#caa9fa'
-    magenta: '#ff79c6'
-    cyan: '#8be9fd'
-    white: '#bfbfbf'
-
-  # Bright colors
+    black: "#000000"
+    red: "#ff5555"
+    green: "#50fa7b"
+    yellow: "#f1fa8c"
+    blue: "#caa9fa"
+    magenta: "#ff79c6"
+    cyan: "#8be9fd"
+    white: "#bfbfbf"
   bright:
-    black: '#575b70'
-    red: '#ff6e67'
-    green: '#5af78e'
-    yellow: '#f4f99d'
-    blue: '#caa9fa'
-    magenta: '#ff92d0'
-    cyan: '#9aedfe'
-    white: '#e6e6e6'
+    black: "#575b70"
+    red: "#ff6e67"
+    green: "#5af78e"
+    yellow: "#f4f99d"
+    blue: "#caa9fa"
+    magenta: "#ff92d0"
+    cyan: "#9aedfe"
+    white: "#e6e6e6"
