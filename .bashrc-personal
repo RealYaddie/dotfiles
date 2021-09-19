@@ -55,7 +55,7 @@ set -o vi
 # neofetch
 
 # Virustotal key
-export VT_API_KEY=79748fa16e93bdd2b84a200721e5499f02cbaa7dae2d9bb6cbbf7b907c677a98
+source $HOME/vt-api-key
 
 # rclone Online
 alias Text-sync="rclone sync -i /home/leosmith/Text/ GDrive-Text:Text"
