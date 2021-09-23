@@ -69,6 +69,12 @@ set hlsearch	" highlight matches
 " Clipboard
 set clipboard+=unnamedplus
 
+" Mouse
+set mouse=a
+
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+
 let mapleader=" " 	" Map the leader key to spacebar
 nnoremap <leader><CR> :noh<CR>
 
@@ -114,13 +120,17 @@ map <leader>tk <C-w>t<C-w>K
 " Remove pipes | that act as seperators for the splits
 " set fillchars+=vert:\
 " }}}
+" Buffers {{{
+nnoremap <silent> <leader>bn :bnext<CR>
+nnoremap <silent> <leader>bp :bprev<CR>
+" }}}
 " Tabs {{{
 " Better tab experience - from https://webdevetc.com/
-map <leader>tn :tabnew<CR>
-map <leader>t<leader> :tabnext
-map <leader>tm :tabmove
-map <leader>tc :tabclose<CR>
-map <leader>to :tabonly<CR>
+map <silent> <leader>tn :tabnew<CR>
+map <silent> <leader>t<leader> :tabnext
+map <silent> <leader>tm :tabmove
+map <silent> <leader>tc :tabclose<CR>
+map <silent> <leader>to :tabonly<CR>
 " nnoremap <leader>tf gt
 " nnoremap <leader>tF gT
 " }}}
