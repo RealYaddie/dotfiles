@@ -58,12 +58,23 @@ set -o vi
 source $HOME/vt-api-key
 
 # rclone Online
+
+# Syncs n' Copies
 alias Text-sync="rclone sync -i /home/leosmith/Text/ GDrive-Text:Text"
 alias Database="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Downloads/This\ be\ it.kdbx GDrive-Text:DB"
 alias backup-folder="rclone sync  /home/leosmith/Backup/ GDrive-Text:Linux\ Config\ Files/Manjaro\(current\)/ -i -L"
 alias Programming-backup="rclone sync /home/leosmith/Text\ Editor\ Stuff/ GDrive-Text:Text\ Editor\ Stuff/ -i"
 # alias virtualrunner-gtr="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
 alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
+
+# Mounts
+alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
+alias drive-uni-stuff="rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &"
+
+# Unmounts
+alias unmount-all="fusermount -u ~/Mounts/Drive\ Misc/ && fusermount -u ~/Mounts/Drive\ Uni\ Stuff/"
+alias unmount-misc="fusermount -u ~/Mounts/Drive\ Misc/"
+alias unmount-uni-stuff="fusermount -u ~/Mounts/Drive\ Uni\ Stuff/"
 
 # rclone Offline
 alias local-application-folder-sync="rclone copy /home/leosmith/Stuff\ To\ Do/Application/ /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/Linux\ Application\ Folder/ -Li"
