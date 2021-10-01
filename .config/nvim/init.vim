@@ -1,12 +1,12 @@
-" Python stuff for virtual environments {{{
+" Python stuff for virtual environments - Fold 1
 " let g:python3_host_prog = '/home/leosmith/.pyenv/versions/py3nvim/bin/python3'
 " let g:python_host_prog = '/home/leosmith/.pyenv/versions/py2nvim/bin/python'
-" }}}
-" Stuff to add nvim-from-vim {{{
+
+" Stuff to add nvim-from-vim
 let &packpath = &runtimepath
 "source ~/.vimrc
-" }}}
-" Plugins Section {{{
+
+" Plugins Section  - Fold 2
 call plug#begin('~/.local/share/nvim/site/autoload')
 " A Vim Plguins for Lively Previewing LaTeX PDF Output
 Plug 'tpope/vim-surround'
@@ -20,34 +20,29 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dracula/vim', { 'as': 'dracula'}
-" Deoplete
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Deoplete
 " Plug 'zchee/deoplete-jedi'
-" Airline
-Plug 'vim-airline/vim-airline'
-" Auto pairs
-" Plug 'jiangmiao/auto-pairs'
+Plug 'vim-airline/vim-airline' " Airline
 Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
-" Neoformat
 Plug 'sbdchd/neoformat'
-" Jedi-vim to jump to definitions
-Plug 'davidhalter/jedi-vim'
-" Nerdtree
+Plug 'davidhalter/jedi-vim' " Jedi-vim to jump to definitions
 Plug 'scrooloose/nerdtree'
-" Highligheted yank area
 Plug 'machakann/vim-highlightedyank'
-
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
+" Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
 call plug#end()
-" }}}
-" Colors, Tabs and UI Config and Remapping leader {{{
+
+" Colors, Tabs and UI Config and Remapping leader - Fold 3
 " Trying to make colorscheme work properly
 " set Vim-specific sequences for RGB colors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set t_Co=256
 
 " colorscheme seoul256
 colorscheme dracula
+
+filetype plugin on
+set nocompatible
 
 set expandtab	" tabs are spaces
 set tabstop=4	" number of visual spaces per tab
@@ -55,51 +50,43 @@ set softtabstop=4	" number of spaces in TAB when editing
 set autoindent
 set shiftwidth=4
 set completeopt=menu,noinsert,noselect
-
 set number	" show line numbers
-set relativenumber	"
+set relativenumber
 set showcmd	" show command in the bottom bar
 set cursorline	" highlight the current line
-
 set lazyredraw	" redraw the screen only when we need to.
-
 set incsearch	" search as characters are entered
 set hlsearch	" highlight matches
+set clipboard+=unnamedplus  " Let neovim use the system clipboard
+set mouse=a     " Allows for scrolling in vim when running from a tmux session
+set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
+set showmatch   " set show matching parenthesis
+set scrolloff=3	    " start scrolling down screen when 8 lines away from the bottom of it
 
-" Clipboard
-set clipboard+=unnamedplus
-
-" Mouse
-set mouse=a
-
-" Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
+" spell-check set to <leader>o, 'o' for orthography'. {Courtesy of Luke Smith}
+map <leader>o :setlocal spell! spelllang=en_us<CR>
 
 let mapleader=" " 	" Map the leader key to spacebar
-nnoremap <leader><CR> :noh<CR>
+nnoremap <leader><CR> :noh<CR>  " disables highlight on search results.
 
-" Terminal Remaps
-tnoremap <Esc> <C-\><C-n>
-
+" Terminal Settings
+tnoremap <Esc> <C-\><C-n>   " Use Esc to go into normal mode
 set title "Change the terminal's title
-let &titleold="st"
+" let &titleold="st"
 
-set showmatch   " set show matching parenthesis
-" }}}
-" Scrolling {{{
+" Scrolling - Fold 4
 " Scrolling on insert, mapping C-E and C-Y like in normal mode
 inoremap <C-E> <C-X><C-E>
 inoremap <C-Y> <C-X><C-Y>
-set scrolloff=3	    " start scrolling down screen when 8 lines away from the bottom of it
-" }}}
-" Folding {{{
+
+" Folding - Fold 5
 " za opens/closes the folder around current fold block/ zR opens all folds in
 " a document with them
 set foldenable
 set foldlevelstart=10	" open most folds by default
 set foldmethod=indent	" fold base on indent level
-" }}}
-" Splits {{{
+
+" Splits - Fold 6
 set splitbelow splitright
 
 " Remapping splits navigation to just CTRL + hjkl
@@ -115,58 +102,38 @@ nnoremap <silent> <C-Up> :resize +3<CR>
 nnoremap <silent> <C-Down> :resize -3<CR>
 
 " Change 2 split windows from vertical to horizontal or horizontal to vertical
-map <leader>th <C-w>t<C-w>H
-map <leader>tk <C-w>t<C-w>K
+map <leader>th <C-w>t<C-w>H " 2 horizontal splits into 2 vertical splits
+map <leader>tk <C-w>t<C-w>K " 2 vertical splits into 2 horizontal splits
 " Remove pipes | that act as seperators for the splits
 " set fillchars+=vert:\
-" }}}
-" Buffers {{{
+
+" Buffers - Fold 7
 nnoremap <silent> <leader>bn :bnext<CR>
 nnoremap <silent> <leader>bp :bprev<CR>
-" }}}
-" Tabs {{{
+
+" Tabs - Fold 8
 " Better tab experience - from https://webdevetc.com/
 map <silent> <leader>tn :tabnew<CR>
 map <silent> <leader>t<leader> :tabnext
 map <silent> <leader>tm :tabmove
 map <silent> <leader>tc :tabclose<CR>
 map <silent> <leader>to :tabonly<CR>
-" nnoremap <leader>tf gt
-" nnoremap <leader>tF gT
-" }}}
-" Shortcuts/Abbreviations {{{
-nnoremap <leader>w :w<CR>
-" Display help in new tab
-nnoremap <leader>h :tabnew<CR>:help<CR><C-w><C-w>:quit<CR>
-" Add newline without leaving normal mode and stay on the current line
-nnoremap <M-o> o<Esc>
-nnoremap <M-S-O> O<Esc>
 
-" Abbreviations
-" }}}
-" Vim-latexsuite Stuff {{{
+" Shortcuts/Abbreviations - Fold 9
+nnoremap <leader>w :w<CR>
+nnoremap <leader>h :tabnew<CR>:help<CR><C-w><C-w>:quit<CR> " Display help in new tab
+" Add newline without leaving normal mode and stay on the current line
+nnoremap <M-o> o<Esc> " Newline below
+nnoremap <M-S-O> O<Esc> " Newline above
+
+" Vim-latexsuite Stuff - Fold 10
 filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 " set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after	" vim-latexsuite installs in /usr/share/vim/vimfiles
 nnoremap <silent><leader>ca :LLPStartPreview<CR>
-" }}}
-" Settings for specific plugins {{{
-" Deoplete
-" let g:deoplete#enable_at_startup = 1
 
-" Undo most recent completeion
-" inoremap <expr><C-g>     deoplete#undo_completion()
-
-" " <CR>: close popup and save indent.
-" inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-" function! s:my_cr_function() abort
-"   return deoplete#close_popup() . "\<CR>"
-" endfunction
-
-" <TAB>: completeion.
-" inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-
+" Plugin Specific Settings - Fold 11
 " Jedi-vim
 "disable autocompletion, because we use deoplete for completion
 let g:jedi#completions_enabled = 0
@@ -175,29 +142,23 @@ let g:jedi#completions_enabled = 0
 " let g:jedi#use_splits_not_buffers = right
 let g:jedi#use_splits_not_buffers = "left"
 
-" Highlighted Yank Region
-hi HighlightedyankRegion cterm=reverse gui=reverse
-" Set highlight duration time to 1000ms aka 1 second.
-let g:highlightedyank_highlight_duration = 500
+hi HighlightedyankRegion cterm=reverse gui=reverse " Highlighted Yank Region
+let g:highlightedyank_highlight_duration = 250 " Set highlight duration time to 1000ms aka 1 second.
+
 " Nerdtree Stuff
 nnoremap <leader>nf :NERDTreeFind<CR>
 let NERDTreeStatusline="%{exists('b:NERDTree')?fnamemodify(b:NERDTree.root.path.str(), ':~'):''}"
-
 nnoremap <C-n> :NERDTreeToggle<CR>
+
 " Neoformat
-" Enable alignment
-let g:neoformat_basic_format_align = 1
-
-" Enable tab to space conversion
-let g:neoformat_basic_format_retab = 1
-
-" Enable trimmming of trailing whitespace
-let g:neoformat_basic_format_trim = 1
+let g:neoformat_basic_format_align = 1 " Enable alignment
+let g:neoformat_basic_format_retab = 1 " Enable tab to space conversion
+let g:neoformat_basic_format_trim = 1 " Enable trimmming of trailing whitespace
 
 " Auto Pairs LunarWatcher
 let g:AutoPairsMapBS=1
-" }}}
-" Autocommands {{{
+
+" Autocommands - Fold 12
 " Run python file
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
@@ -205,8 +166,8 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellesca
 " Goyo and Limelight integration
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
-" }}}
-" Functions {{{
+
+" Functions - Fold 13
 " Word Processor Mode.
 function! Writer ()
     " Sets
@@ -225,19 +186,14 @@ function! Writer ()
 endfunction
 com! WR call Writer()
 
-" Transparent Background toggle on.
-function! TransparencyToggleOn ()
-    highlight Normal ctermbg=none
-    highlight NonText ctermbg=none
-endfunction
-com! TP call TransparencyToggleOn()
+" Latest additions (sep 30 2021)
 
-" Transparent Background toggle off.
-function! TransparencyToggleOff ()
-    highlight Normal ctermbg=236
-    highlight NonText ctermbg=236
-endfunction
-com! TPOFF call TransparencyToggleOff()
-" }}}
+" Automatically deletes all trailing whitespace and newlines at end of file on save.
+autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\n\+\%$//e
+
+" Replace all is aliased to S.
+nnoremap S :%s//g<Left><Left>
+
 set modelines=1
 " vim:foldmethod=marker:foldlevel=0

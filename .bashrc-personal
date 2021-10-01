@@ -7,7 +7,7 @@
 #export VISUAL='vim'
 
 # Get colorized output for `man` pages with `bat`
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"  
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # Activating vi mode in bash
 set -o vi
@@ -111,6 +111,7 @@ alias GALAXY="source venv/bin/activate"
 alias lmr="ls -rt --color=auto"
 alias lmar="ls -rat --color=auto"
 alias ldir="ls -d */ --color=auto"
+alias librepdf="libreoffice --headless --convert-to pdf"
 
 # youtube-dl
 alias audio-youtubedl="youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"

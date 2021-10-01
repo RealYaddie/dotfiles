@@ -27,6 +27,7 @@ set cursorline	" highlight current line
 filetype indent on	" load filetype-specific indent files
 set lazyredraw		" redraw the screen only when we need to.
 set showmatch		" highlight matching [{()}]
+set mouse=a
 " }}}
 " Searching {{{
 set incsearch	" search as characters are entered

@@ -10,6 +10,7 @@
     <property name="known_applications" type="array">
       <value type="string" value="brave-browser"/>
       <value type="string" value="ClipGrab"/>
+      <value type="string" value="com.github.candiedoperation.ordne"/>
       <value type="string" value="discord"/>
       <value type="string" value="flameshot"/>
       <value type="string" value="KDocker"/>
@@ -25,6 +26,7 @@
       <value type="string" value="Package Manager"/>
       <value type="string" value="Simplenote"/>
       <value type="string" value="Spotify"/>
+      <value type="string" value="teams"/>
       <value type="string" value="thunar"/>
       <value type="string" value="Thunderbird"/>
       <value type="string" value="Variety"/>
