@@ -1,3 +1,7 @@
+" Adding to the runtimepath
+" let &rtp='/home/leosmith/.config/vim'
+" let runtimepath=~/.config/vim,/usr/share/vim/vimfiles,/usr/share/vim/vim82,/usr/share/vim/vimfiles/after,~/.vim/after
+" set runtimepath+=~/.config/vim
 " Plugins Section {{{
 call plug#begin()
 " A Vim Plguins for Lively Previewing LaTeX PDF Output
@@ -21,10 +25,10 @@ set completeopt=menu,noinsert,noselect
 " }}}
 " UI Config {{{
 set number	" show line numbers
-set relativenumber  " 
+set relativenumber  "
 set showcmd	" show command in the bottom bar
 set cursorline	" highlight current line
-filetype indent on	" load filetype-specific indent files
+filetype plugin indent on	" load filetype-specific indent files
 set lazyredraw		" redraw the screen only when we need to.
 set showmatch		" highlight matching [{()}]
 set mouse=a
@@ -70,7 +74,7 @@ map <leader>th <C-w>t<C-w>H
 map <leader>tk <C-w>t<C-w>K
 
 " Removes pipes | that act as seperators for the splits
-"set fillchars+=vert:\ 
+"set fillchars+=vert:\
 " }}}
 " Abbreviations {{{
 " }}}
@@ -84,7 +88,7 @@ nnoremap <silent><leader>ca :LLPStartPreview<CR>
 " Scrolling {{{
 inoremap <C-E> <C-X><C-E>   " scrolling on insert
 inoremap <C-Y> <C-X><C-Y>
-set scrolloff=8     " start scrolling down screen when 8 lines from it
+set scrolloff=2     " start scrolling down screen when 8 lines from it
 " }}}
 set modelines=1
 " vim:foldmethod=marker:foldlevel=0

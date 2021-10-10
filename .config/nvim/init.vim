@@ -28,7 +28,7 @@ Plug 'sbdchd/neoformat'
 Plug 'davidhalter/jedi-vim' " Jedi-vim to jump to definitions
 Plug 'scrooloose/nerdtree'
 Plug 'machakann/vim-highlightedyank'
-" Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
 call plug#end()
 
 " Colors, Tabs and UI Config and Remapping leader - Fold 3
@@ -38,10 +38,13 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set t_Co=256
 
+let g:limelight_conceal_ctermfg = 1
 " colorscheme seoul256
+" Allows for transparent background in neovim from :h dracula & https://github.com/dracula/vim/issues/88
+let g:dracula_colorterm = 0
 colorscheme dracula
 
-filetype plugin on
+filetype plugin indent on
 set nocompatible
 
 set expandtab	" tabs are spaces
@@ -64,7 +67,7 @@ set showmatch   " set show matching parenthesis
 set scrolloff=3	    " start scrolling down screen when 8 lines away from the bottom of it
 
 " spell-check set to <leader>o, 'o' for orthography'. {Courtesy of Luke Smith}
-map <leader>o :setlocal spell! spelllang=en_us<CR>
+map <leader>sp :setlocal spell! spelllang=en_us<CR>
 
 let mapleader=" " 	" Map the leader key to spacebar
 nnoremap <leader><CR> :noh<CR>  " disables highlight on search results.
@@ -159,13 +162,19 @@ let g:neoformat_basic_format_trim = 1 " Enable trimmming of trailing whitespace
 let g:AutoPairsMapBS=1
 
 " Autocommands - Fold 12
+" PYTHON
 " Run python file
 autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
+" MARKDOWN
+" autocmd FileType markdown
 " Goyo and Limelight integration
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
+
+nnoremap <leader>G :Goyo<CR>
+nnoremap <leader>GG :Goyo!<CR>
 
 " Functions - Fold 13
 " Word Processor Mode.

@@ -6,11 +6,18 @@
 #export EDITOR='vim'
 #export VISUAL='vim'
 
+# Set MANPAGER
 # Get colorized output for `man` pages with `bat`
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
+# use nvim as manpager
+# export MANPAGER="nvim -c 'set ft=man' -"
+
 # Activating vi mode in bash
 set -o vi
+# clear screen while while vi mode is active.
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
 
 
 # # ignore upper and lowercase when TAB completion
@@ -66,6 +73,7 @@ alias backup-folder="rclone sync  /home/leosmith/Backup/ GDrive-Text:Linux\ Conf
 alias Programming-backup="rclone sync /home/leosmith/Text\ Editor\ Stuff/ GDrive-Text:Text\ Editor\ Stuff/ -i"
 # alias virtualrunner-gtr="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
 alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
+alias school-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ mega-videos:School\ Videos -i"
 
 # Mounts
 alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
@@ -101,6 +109,7 @@ alias kdeconnect-close="killall kdeconnectd kdeconnect-indicator"
 
 # Misc
 alias at="alacritty-themes"
+alias rbeats="sh Github/Rofi-Beats/rofi-beats"
 
 # Python Programming Stuff
 alias KIVY="source venv/bin/activate"
@@ -117,6 +126,8 @@ alias librepdf="libreoffice --headless --convert-to pdf"
 alias audio-youtubedl="youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
 alias video-best-youtubedl="youtube-dl -f 'bestvideo[ext=mp4]+bestaudio'"
 alias video-720p-youtubedl="youtube-dl -f 22"
+
+# mpv
 alias mpv-720p="mpv --ytdl-format=22"
 alias m720list="mpv --ytdl-format=22 --ytdl-raw-options="yes-playlist=""
 alias mpv-1080p="mpv --ytdl-format=18"
@@ -125,9 +136,10 @@ alias m1080list="mpv --ytdl-format=22 --ytdl-raw-options="yes-playlist=""
 # Tmux
 alias tma="tmux attach"
 alias tmt="tmux attach -t"
+alias tmn="tmux new -s"
 
 # Git Stuff
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias c='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 
 # Making the History size infinite
 HISTSIZE= HISTFILESIZE=
