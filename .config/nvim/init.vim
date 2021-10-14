@@ -47,11 +47,11 @@ colorscheme dracula
 filetype plugin indent on
 set nocompatible
 
+set autoindent
 set expandtab	" tabs are spaces
 set tabstop=4	" number of visual spaces per tab
-set softtabstop=4	" number of spaces in TAB when editing
-set autoindent
 set shiftwidth=4
+set softtabstop=0	" number of spaces in TAB when editing
 set completeopt=menu,noinsert,noselect
 set number	" show line numbers
 set relativenumber
