@@ -67,7 +67,7 @@ set showmatch   " set show matching parenthesis
 set scrolloff=3	    " start scrolling down screen when 8 lines away from the bottom of it
 
 " spell-check set to <leader>o, 'o' for orthography'. {Courtesy of Luke Smith}
-map <leader>sp :setlocal spell! spelllang=en_us<CR>
+map <leader>o :setlocal spell! spelllang=en_us<CR>
 
 let mapleader=" " 	" Map the leader key to spacebar
 nnoremap <leader><CR> :noh<CR>  " disables highlight on search results.
