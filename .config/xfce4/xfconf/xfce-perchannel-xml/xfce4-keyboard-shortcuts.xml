@@ -80,6 +80,8 @@
       <property name="&lt;Super&gt;e" type="string" value="evince"/>
       <property name="&lt;Super&gt;d" type="string" value="kdocker"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/home/leosmith/scripts/testing/env-vars.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;o" type="string" value="/home/leosmith/scripts/obs-status.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="/home/leosmith/scripts/WIP/meet-links.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -201,10 +203,8 @@
       <property name="&lt;Alt&gt;F9" type="string" value="hide_window_key"/>
       <property name="&lt;Alt&gt;F7" type="string" value="move_window_key"/>
       <property name="&lt;Control&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="string" value="move_window_up_key"/>
-      <property name="&lt;Control&gt;F5" type="string" value="workspace_5_key"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Left" type="string" value="left_workspace_key"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Down" type="string" value="down_workspace_key"/>
-      <property name="&lt;Control&gt;F4" type="string" value="workspace_4_key"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;KP_1" type="string" value="move_window_workspace_1_key"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;KP_2" type="string" value="move_window_workspace_2_key"/>
       <property name="&lt;Alt&gt;&lt;Control&gt;KP_3" type="string" value="move_window_workspace_3_key"/>
@@ -223,13 +223,10 @@
       <property name="&lt;Alt&gt;Tab" type="string" value="cycle_windows_key"/>
       <property name="&lt;Super&gt;Tab" type="string" value="switch_window_key"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;Page_Up" type="string" value="raise_window_key"/>
-      <property name="&lt;Control&gt;F2" type="string" value="workspace_2_key"/>
-      <property name="&lt;Control&gt;F1" type="string" value="workspace_1_key"/>
       <property name="Up" type="string" value="up_key"/>
       <property name="&lt;Control&gt;F6" type="string" value="workspace_6_key"/>
       <property name="&lt;Control&gt;F7" type="string" value="workspace_7_key"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;d" type="string" value="show_desktop_key"/>
-      <property name="&lt;Control&gt;F3" type="string" value="workspace_3_key"/>
       <property name="&lt;Alt&gt;Insert" type="string" value="add_workspace_key"/>
       <property name="&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Up" type="string" value="move_window_up_workspace_key"/>
       <property name="&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Down" type="string" value="move_window_down_workspace_key"/>
@@ -246,6 +243,11 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="tile_down_right_key"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;k" type="string" value="move_window_next_workspace_key"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;j" type="string" value="move_window_prev_workspace_key"/>
+      <property name="&lt;Super&gt;1" type="string" value="workspace_1_key"/>
+      <property name="&lt;Super&gt;2" type="string" value="workspace_2_key"/>
+      <property name="&lt;Super&gt;3" type="string" value="workspace_3_key"/>
+      <property name="&lt;Super&gt;4" type="string" value="workspace_4_key"/>
+      <property name="&lt;Super&gt;5" type="string" value="workspace_5_key"/>
     </property>
   </property>
   <property name="providers" type="array">
