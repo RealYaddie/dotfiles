@@ -1,0 +1,3 @@
+I want the process of reading the manga that I download in an easier way, cuz right now I have to do a bunch of clicking and changing of directories and then opening the pdfs.
+
+Idea: I'm thinking of somehow making use of either dmenu or rofi to give me a drop down prompt where I type in the chapter and when I click on it, the pdf just gets opened up, that'd be a whole lot better than what I'm doing now.
