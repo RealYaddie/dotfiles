@@ -20,8 +20,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dracula/vim', { 'as': 'dracula'}
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Deoplete
-" Plug 'zchee/deoplete-jedi'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline' " Airline
 Plug 'vim-airline/vim-airline-themes'
 Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
@@ -29,7 +29,16 @@ Plug 'sbdchd/neoformat'
 Plug 'davidhalter/jedi-vim' " Jedi-vim to jump to definitions
 Plug 'scrooloose/nerdtree'
 Plug 'machakann/vim-highlightedyank'
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" tabular plugin used to format tables
+Plug 'godlygeek/tabular'
+" JSON front matter highlight plugin
+" Plug 'elzr/vim-json'
+Plug 'plasticboy/vim-markdown'
+" if you don't have node and yarn, use pre build
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+" Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
 call plug#end()
 
 " Colors, Tabs and UI Config and Remapping leader - Fold 3
@@ -125,19 +134,59 @@ map <silent> <leader>to :tabonly<CR>
 
 " Shortcuts/Abbreviations - Fold 9
 nnoremap <leader>w :w<CR>
-nnoremap <leader>h :tabnew<CR>:help<CR><C-w><C-w>:quit<CR> " Display help in new tab
+" Display help in new tab
+nnoremap <leader>h :tabnew<CR>:help<CR><C-w><C-w>:quit<CR>
 " Add newline without leaving normal mode and stay on the current line
 nnoremap <M-o> o<Esc> " Newline below
 nnoremap <M-S-O> O<Esc> " Newline above
 
 " Vim-latexsuite Stuff - Fold 10
-filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 " set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after	" vim-latexsuite installs in /usr/share/vim/vimfiles
 nnoremap <silent><leader>ca :LLPStartPreview<CR>
 
 " Plugin Specific Settings - Fold 11
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+" Close the auto-complete window when we select something from it
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+" Use TAB to cycle through auto-complete options.
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+
+" Ultisnips
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<C-d>"   " Use <Tab> to trigger autocompletion
+
+" shortcut to go to next position
+let g:UltiSnipsJumpForwardTrigger='<c-j>'
+
+" shortcut to go to previous position
+let g:UltiSnipsJumpBackwardTrigger='<c-k>'
+
+" Vim-Markdown
+" disable header folding
+let g:vim_markdown_folding_disabled = 1
+
+" do not use conceal feature, the implementation is not so good
+let g:vim_markdown_conceal = 0
+
+" disable math tex conceal feature
+let g:tex_conceal = ""
+let g:vim_markdown_math = 1
+
+" support front matter of various format
+let g:vim_markdown_frontmatter = 1  " for YAML format
+let g:vim_markdown_toml_frontmatter = 1  " for TOML format
+let g:vim_markdown_json_frontmatter = 1  " for JSON format
+
+" Markdown-Preview
+" do not close the preview tab when switching to other buffers
+let g:mkdp_auto_close = 0
+nnoremap <M-m> :MarkdownPreview<CR>
+nnoremap <C-p> :MarkdownPreviewToggle<CR>
+nnoremap <M-,> :MarkdownPreviewStop<CR>
+
 " Jedi-vim
 "disable autocompletion, because we use deoplete for completion
 let g:jedi#completions_enabled = 0
@@ -145,6 +194,7 @@ let g:jedi#completions_enabled = 0
 " open the go-to function in split, not another buffer
 " let g:jedi#use_splits_not_buffers = right
 let g:jedi#use_splits_not_buffers = "left"
+
 
 hi HighlightedyankRegion cterm=reverse gui=reverse " Highlighted Yank Region
 let g:highlightedyank_highlight_duration = 250 " Set highlight duration time to 1000ms aka 1 second.
