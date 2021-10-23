@@ -11,10 +11,6 @@ font:
     family: CaskaydiaCove Nerd Font
   style: Regular
   size: 12
-bell:
-  animation: EaseOutExpo
-  duration: 100
-  color: "#ffffff"
 background_opacity: 0.92
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"

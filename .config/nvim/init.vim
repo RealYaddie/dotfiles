@@ -23,6 +23,7 @@ Plug 'dracula/vim', { 'as': 'dracula'}
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " Deoplete
 " Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline' " Airline
+Plug 'vim-airline/vim-airline-themes'
 Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
 Plug 'sbdchd/neoformat'
 Plug 'davidhalter/jedi-vim' " Jedi-vim to jump to definitions
