@@ -73,7 +73,9 @@ alias backup-folder="rclone sync  /home/leosmith/Backup/ GDrive-Text:Linux\ Conf
 alias Programming-backup="rclone sync /home/leosmith/Text\ Editor\ Stuff/ GDrive-Text:Text\ Editor\ Stuff/ -i"
 # alias virtualrunner-gtr="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
 alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
+
 alias school-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ mega-videos:School\ Videos -i"
+alias year3-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ year3-videos:School\ Videos -i"
 
 # Mounts
 alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
@@ -91,11 +93,12 @@ alias GTR-SS="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith
 alias backup-talesrunner="GTR-VR && GTR-SS && talesrunner_backup-gtr"
 
 # Directories
-alias Pystuff="cd $HOME/Text\ Editor\ Stuff/"
-alias Text="cd $HOME/Text/"
+alias pystuff="cd $HOME/Text\ Editor\ Stuff/"
+alias text="cd $HOME/Text/"
 alias text-markdown="cd $HOME/Text/Markdown Notes/"
-alias CMU="cd $HOME/Desktop/CMU\ Docs/"
-alias Application="cd $HOME/Desktop/Application/"
+alias cmu="cd $HOME/Desktop/CMU\ Docs/"
+alias school-stuff="cd $HOME/Downloads/Documents/School\ Stuff"
+alias application="cd $HOME/Desktop/Application/"
 alias desktop_win="cd /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/"
 alias other-drive="cd /run/media/leosmith/1404235A04233E5C/"
 alias mark-text="cd $HOME/Text/Markdown\ Notes/"

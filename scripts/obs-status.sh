@@ -22,11 +22,11 @@ pstatus=$(echo "$result" | sed -e 's/[ ",]//g' -e '/[][{}]/d' | awk -F ":" '/isR
 
 
 if [[ "${rstatus}" == "true" && "${pstatus}" == "false" ]]; then
-    notify-send "RECORDING!!" -u normal -i obs
+    notify-send "RECORDING." -u normal -i obs-tray-active
 elif [[ "${pstatus}" == "true" && "${rstatus}" == "true" ]]; then
-    notify-send "PAUSED!!" -u normal -i obs
+    notify-send "PAUSED." -u normal -i media-playback-paused
 elif [[   "${pstatus}" == "false" && "${rstatus}" == "false"  ]]; then
-    notify-send "NOT RECORDING!!" -u normal -i obs
+    notify-send "NOT RECORDING!!" -u normal -i obs-tray
 else
-    notify-send "OBS NOT OPEN, NOT RECORDING!!" -u normal -i obs
+    notify-send "OBS NOT OPEN, NOT RECORDING!!" -u normal -i account-types-closed
 fi
