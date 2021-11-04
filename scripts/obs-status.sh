@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-# Descriptiom: A simple script that uses obs-cli-lefac to get the recording status of OBS and sends a notification using notify-send
+# Description: A simple script that uses obs-cli-lefac to get the recording status of OBS and sends a notification using notify-send
 # to send a message, that states whether the recording is RECORDING, PAUSED or if we're not recordig at all.
 
 #TODO: Try and improve the script whether that be to use something other than notify-send, to replace the one notification
 #      instead of sending multiple notifications and filling up the entire right side of the screen.
 #NOTE: Probably won't have to do ^ that, it might be better to just make a cron job to run this every 15-20 secs while active.
+
+#TODO: Read up on the obs-cli tool and figure out if it might be better to use it directly to get rstatus & pstatus, instead of using sed and awk.
 
 # Saving the obs-cli output to a variable
 result="$(obs-cli-leafac GetRecordingStatus -a "localhost:4444" -p "$(cat /home/leosmith/.config/obs-testing/pass.txt)")"
@@ -22,9 +24,9 @@ pstatus=$(echo "$result" | sed -e 's/[ ",]//g' -e '/[][{}]/d' | awk -F ":" '/isR
 
 
 if [[ "${rstatus}" == "true" && "${pstatus}" == "false" ]]; then
-    notify-send "RECORDING." -u normal -i obs-tray-active
+    notify-send "RECORDING" -u normal -i obs-tray-active
 elif [[ "${pstatus}" == "true" && "${rstatus}" == "true" ]]; then
-    notify-send "PAUSED." -u normal -i media-playback-paused
+    notify-send "PAUSED" -u normal -i media-playback-paused
 elif [[   "${pstatus}" == "false" && "${rstatus}" == "false"  ]]; then
     notify-send "NOT RECORDING!!" -u normal -i obs-tray
 else

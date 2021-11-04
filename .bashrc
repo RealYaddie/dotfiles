@@ -150,7 +150,7 @@ bind "set completion-ignore-case on"
 
 # listing stuff
 
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -la'
 alias l='ls'
@@ -163,7 +163,6 @@ alias fgrep='fgrep --color=auto'
 
 
 # Aliases for software managemet
-
 #pacman or pm
 # alias pacman='pacman --color=auto'
 alias update='sudo pacman -Syyu'
