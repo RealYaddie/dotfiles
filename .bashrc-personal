@@ -114,7 +114,7 @@ alias kdeconnect-close="killall kdeconnectd kdeconnect-indicator"
 
 # Misc
 alias at="alacritty-themes"
-alias rbeats="sh $HOME/Github/Rofi-Beats/rofi-beats"
+alias rbeats="sh $HOME/Github/Rofi-Beats/rofi-beats-linux"
 
 # Python Programming Stuff
 alias KIVY="source venv/bin/activate"

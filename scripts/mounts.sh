@@ -10,6 +10,8 @@
 # so I know what exactly got mounted without having to check.
 # Whether that be through replacing the entire menu func with an array or something.
 
+#TODO: Allow Option 4 to unmount all the currently mounted folders if not all of them are currently mounted.
+
 # Menu with options that will be displayed in a rofi/dmenu prompt
 function menu(){
     printf "1. Drive Uni Stuff Folder\n"
@@ -24,9 +26,9 @@ choice=$(menu | rofi -dmenu | cut -d. -f1 )
 
 function notification(){
     if [[ $choice -eq 4 ]]; then
-        notify-send "Unmounted All Drives."
+        notify-send "Unmounted All Drives." --icon=drive-removable-media
     else
-        notify-send "Remote folder Mounted."
+        notify-send "$@ Folder Mounted." --icon=drive-removable-media
     fi
 }
 
@@ -35,22 +37,22 @@ function main() {
 
     case $choice in
         1)
-            # notification ; $terminal -e sh -c "sleep 0.2; rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &"
-            notification ; sleep 0.2 ; rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &
-            # echo "$choice"
+            # notification ; $terminal -e sh -c "sleep 0.5; rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &"
+            notification "Uni Stuff";
+            sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &
             ;;
         2)
-            # notification ; $terminal -e sh -c "sleep 0.2 ; rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
-            notification ; sleep 0.2 ; rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &
-            # echo "$choice"
+            # notification ; $terminal -e sh -c "sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
+            notification "Misc";
+            sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &
             ;;
         3)
-            notification ; sleep 0.2 ; rclone --vfs-cache-mode writes mount GDrive-Text:Helpful\ Docs ~/Mounts/Drive\ Helpful\ Docs/ &
-            # echo $choice
+            notification "Helpful Docs";
+            sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Helpful\ Docs ~/Mounts/Drive\ Helpful\ Docs/ &
             ;;
         4)
-            notification ; sleep 0.2 ; fusermount -u ~/Mounts/Drive\ Misc/ && fusermount -u ~/Mounts/Drive\ Uni\ Stuff/ && fusermount -u ~/Mounts/Drive\ Helpful\ Docs/
-            # echo $choice
+            notification ;
+            sleep 0.5 ; fusermount -zu ~/Mounts/Drive\ Misc/ && fusermount -zu ~/Mounts/Drive\ Uni\ Stuff/ && fusermount -zu ~/Mounts/Drive\ Helpful\ Docs/
             ;;
     esac
 }

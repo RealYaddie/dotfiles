@@ -180,6 +180,10 @@ let g:vim_markdown_frontmatter = 1  " for YAML format
 let g:vim_markdown_toml_frontmatter = 1  " for TOML format
 let g:vim_markdown_json_frontmatter = 1  " for JSON format
 
+" disable automatic insertion of bullet points and the new list item indent
+let g:vim_markdown_auto_insert_bullets = 0
+let g:vim_markdown_new_list_item_indent = 0
+
 " Markdown-Preview
 " do not close the preview tab when switching to other buffers
 let g:mkdp_auto_close = 0

@@ -2,7 +2,8 @@
 
 # DESCRIPTION: Simple dmenu prompt that will display all my class and club google meet links and on selecting one it'll launch it in default browser.
 
-#TODO: Figure out how to source dmenurc and use the settings from there in this script, so dmenu looks the same everywhere.
+# TODO: Figure out how to source dmenurc and use the settings from there in this script, so dmenu looks the same everywhere.
+# TODO: Put the meeting code after the name of the meet just so I can quickly check the links.
 
 # The Directory with all the Quick launch links for year 3
 directory="$HOME/Desktop/CMU Docs/Year 3 Semester 1(21-22)/Quick Launch"

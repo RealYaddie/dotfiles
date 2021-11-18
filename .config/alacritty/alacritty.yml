@@ -9,7 +9,7 @@ window:
 font:
   normal:
     family: CaskaydiaCove Nerd Font
-  style: Regular
+  style: Bold
   size: 12
 background_opacity: 0.92
 selection:
