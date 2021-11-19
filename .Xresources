@@ -10,6 +10,14 @@ st.font: CaskaydiaCove Nerd Font-12
 ! st.termname: st-256color
 ! st.borderpx: 2
 
+!! Stuff to make font rendering better
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.autohint: 0
+Xft.rgba: rgb
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+
 !! Set the background, foreground and cursor colors as below:
 
 /* !! gruvbox: */
@@ -129,7 +137,7 @@ st.font: CaskaydiaCove Nerd Font-12
 /* *.color14:  #00ffff */
 /* *.color15:  #aabac8 */
 
-/* !! dracula(old): */ 
+/* !! dracula(old): */
 /* *.color0:	#000000 */
 /* *.color1:	#ff5555 */
 /* *.color2:	#50fa7b */
