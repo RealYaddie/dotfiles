@@ -74,8 +74,8 @@ alias Programming-backup="rclone sync /home/leosmith/Text\ Editor\ Stuff/ GDrive
 # alias virtualrunner-gtr="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
 alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
 
-alias school-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ mega-videos:School\ Videos -L"
-alias year3-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ year3-videos:School\ Videos -L"
+alias school-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ mega-videos:School\ Videos -L -v"
+alias year3-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ year3-videos:School\ Videos -L -v"
 
 # Mounts
 alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"

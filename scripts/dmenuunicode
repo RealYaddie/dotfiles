@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # The famous "get a menu of emojis to copy" script.
-# TODO: Find out how to source dmenurc and use it here <13-11-21> #
 
+# Source dmenurc if it exists and sets a default if it isn't present
 if [ -f $HOME/.dmenurc ]; then
     . $HOME/.dmenurc
 else
