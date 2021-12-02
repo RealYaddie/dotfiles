@@ -22,7 +22,7 @@ DMENU_SB="#2EB398"
 DMENU_SF="#1B2224"
 
 # text for dmenu prompt
-DMENU_P="Run:"
+DMENU_P="Run: "
 
 # command for the terminal application to be used:
 TERMINAL_CMD="alacritty -e"

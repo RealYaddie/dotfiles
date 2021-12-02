@@ -15,7 +15,7 @@ fi
 directory="$HOME/Desktop/CMU Docs/Year 3 Semester 1(21-22)/Quick Launch"
 
 # Finds all desktop links in the directory and lists them out in a dmenu prompt with the full path and .desktop extension removed in the dmenu prompt
-prompt="$(find "$directory" -maxdepth 1 -name '*.desktop' | sed -e 's#^/h.*Launch/##g' -e 's#[.]desktop$##g' | $DMENU -l 20)"
+prompt="$(find "$directory" -maxdepth 1 -name '*.desktop' | sed -e 's#^/h.*Launch/##g' -e 's#[.]desktop$##g' | $DMENU -p "Meeting: " -l 20)"
 
 # Adds the full path and the .desktop extension to whatever option was chosen from the dmenu prompt.
 choice="$(echo $directory/$prompt.desktop)"
