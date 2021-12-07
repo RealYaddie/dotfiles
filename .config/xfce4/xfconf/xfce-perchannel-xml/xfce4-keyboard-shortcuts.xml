@@ -59,7 +59,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="xfce4-display-settings --minimal"/>
       <property name="&lt;Super&gt;x" type="string" value="xfce4-session-logout"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;e" type="string" value="whatsdesk"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="whatsapp-web"/>
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;g" type="string" value="gimp"/>
       <property name="&lt;Super&gt;k" type="string" value="kdenlive"/>
@@ -70,18 +69,23 @@
       </property>
       <property name="&lt;Alt&gt;grave" type="string" value="mailspring"/>
       <property name="&lt;Super&gt;grave" type="string" value="xfce4-keyboard-settings"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -p &apos;Run:&apos; -nb &apos;#1B2224&apos; -nf &apos;#2EB398&apos; -sb &apos;#2EB398&apos; -sf &apos;#1B2224&apos;  -fn &apos;NotoMonoRegular:bold:pixelsize=14&apos;"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="sh /home/leosmith/scripts/move-to-workspace2.sh"/>
       <property name="&lt;Super&gt;Return" type="string" value="st"/>
       <property name="&lt;Alt&gt;Return" type="string" value="alacritty"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;d" type="string" value="discord"/>
       <property name="&lt;Super&gt;l" type="string" value="lowriter"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="libreoffice"/>
       <property name="&lt;Super&gt;e" type="string" value="evince"/>
       <property name="&lt;Super&gt;d" type="string" value="kdocker"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/home/leosmith/scripts/testing/env-vars.sh"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;o" type="string" value="/home/leosmith/scripts/obs-status.sh"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="/home/leosmith/scripts/WIP/meet-links.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;o" type="string" value="xfce4-panel"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;d" type="string" value="discord"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -p &apos;Run:&apos; -nb &apos;#1B2224&apos; -nf &apos;#2EB398&apos; -sb &apos;#2EB398&apos; -sf &apos;#1B2224&apos;  -fn &apos;CaskaydiaCove Nerd Font:bold:pixelsize=16&apos;"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="whatsapp-nativefier"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;e" type="string" value="/home/leosmith/.scripts/dmenuunicode"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="/home/leosmith/.scripts/meet-links.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/home/leosmith/.scripts/mounts.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;slash" type="string" value="/home/leosmith/.scripts/obs-status.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;a" type="string" value="/home/leosmith/.scripts/obs-status.sh"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="sh /home/leosmith/.scripts/move-to-workspace2.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="/home/leosmith/.scripts/scc"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
