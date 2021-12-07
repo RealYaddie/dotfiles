@@ -11,3 +11,4 @@ cfp  $HOME/.profile                   # profile file for login settings for bash
 cfvv $HOME/.vimrc                     # vim config
 cfd  $HOME/.dmenurc                   # dmenu "config" file
 cfr  $HOME/README.md                  # dotfiles github repo readme
+cfg  ${XDG_CONFIG_HOME}/git/config    # github config file
