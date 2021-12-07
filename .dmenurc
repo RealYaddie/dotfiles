@@ -7,7 +7,7 @@
 # '#1B2224'  -fn 'NotoMonoRegular:bold:pixelsize=14'
 
 # define the font for dmenu to be used
-DMENU_FN="NotoMonoRegular:bold:pixelsize=14"
+DMENU_FN="monospace:bold:pixelsize=16"
 
 # background colour for unselected menu-items
 DMENU_NB="#1B2224"

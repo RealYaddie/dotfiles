@@ -16,9 +16,11 @@ directory="$HOME/Desktop/CMU Docs/Year 3 Semester 1(21-22)/Quick Launch"
 
 # Finds all desktop links in the directory and lists them out in a dmenu prompt with the full path and .desktop extension removed in the dmenu prompt
 prompt="$(find "$directory" -maxdepth 1 -name '*.desktop' | sed -e 's#^/h.*Launch/##g' -e 's#[.]desktop$##g' | $DMENU -p "Meeting: " -l 20)"
+# echo "Prompt: $prompt"
 
 # Adds the full path and the .desktop extension to whatever option was chosen from the dmenu prompt.
 choice="$(echo $directory/$prompt.desktop)"
+# echo "Choice: $choice"
 
 # Grab only the link from the option that was chosen.
 link=$( awk '/.*https.*/ {print $0}' "$choice" | sed 's/^URL=//' | xargs -r -I{} brave "{}")

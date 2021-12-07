@@ -142,9 +142,6 @@ ex ()
 
 # Start of my Additions/changes
 
-export EDITOR='nvim'
-export VISUAL='nvim'
-
 # ignore upper and lowercase for TAB completions
 bind "set completion-ignore-case on"
 

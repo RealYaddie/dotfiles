@@ -2,10 +2,6 @@
 # # ~/.bashrc-personal
 # #
 
-# Editors
-#export EDITOR='vim'
-#export VISUAL='vim'
-
 # Set MANPAGER
 # Get colorized output for `man` pages with `bat`
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -158,3 +154,8 @@ HISTSIZE= HISTFILESIZE=
 # Pyenv init
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Sourcing bash alias files
+alias scc="scc 2>/dev/null"     # Displays shortcuts in ~/.bash-aliases
+alias keys="sh ~/.scripts/shortcuts && ~/.scripts/adshortcuts.sh; source ~/.bashrc"
+source ~/.bash-aliases

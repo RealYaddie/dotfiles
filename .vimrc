@@ -24,6 +24,7 @@ set expandtab		" tabs are spaces
 set completeopt=menu,noinsert,noselect
 " }}}
 " UI Config {{{
+set path+=**
 set number	" show line numbers
 set relativenumber  "
 set showcmd	" show command in the bottom bar
