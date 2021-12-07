@@ -1,3 +1,4 @@
+# vim: filetype=sh
 # You can add comments to these files with #
 cac ${XDG_CACHE_HOME}
 cf  ${XDG_CONFIG_HOME}
