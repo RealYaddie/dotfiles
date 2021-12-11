@@ -9,4 +9,5 @@ em=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Engineering\ Mathe
 ie=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Industrial\ Electronics\" \\
 mce=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Microcontrollers\ and\ Embedded\ Systems\" \\
 he=\"cd $HOME/Helpful\ Stuff\" \\
-stfd=\"cd $HOME/Stuff\ To\ Do\" \\">> ~/.bash-aliases
+stfd=\"cd $HOME/Stuff\ To\ Do\" \\
+nbzi=\"cd $HOME/Text/Zim\ Notebooks\" \\">> ~/.bash-aliases
