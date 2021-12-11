@@ -34,17 +34,21 @@ desktop_audio="$(obs-cli-leafac -a "localhost:4444" -p "$(cat /home/leosmith/.co
 mic_audio="$(obs-cli-leafac -a "localhost:4444" -p "$(cat /home/leosmith/.config/obs-testing/pass.txt)" --field 0.sourceActive GetSourceActive='{ "sourceName": "Mic/Aux"}')"
 
 # Multi-line text for notify-send
-recording="$(echo -e "RECORDING!!\nRECORDING TIME: $rec_time\n1 - BROWSER(BRAVE FULL): $browser_full\n2 - BROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
-paused="$(echo -e "RECORDING PAUSED!!\nRECORDING TIME: $rec_time\nBROWSER(BRAVE FULL): $browser_full\nBROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
-not_rec="$(echo -e "NOT RECORDING!!\nBROWSER(BRAVE FULL): $browser_full\nBROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
+# recording="$(echo -e "RECORDING!!\nRECORDING TIME: $rec_time\n1 - BROWSER(BRAVE FULL): $browser_full\n2 - BROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
+# paused="$(echo -e "RECORDING PAUSED!!\nRECORDING TIME: $rec_time\nBROWSER(BRAVE FULL): $browser_full\nBROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
+# not_rec="$(echo -e "NOT RECORDING!!\nBROWSER(BRAVE FULL): $browser_full\nBROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
+
+recording="$(echo -e "RECORDING TIME: $rec_time\n1 - BROWSER(BRAVE FULL): $browser_full\n2 - BROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
+paused="$(echo -e "RECORDING TIME: $rec_time\n1 - BROWSER(BRAVE FULL): $browser_full\n2 - BROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
+not_rec="$(echo -e "1 - BROWSER(BRAVE FULL): $browser_full\n1 - BROWSER(BRAVE NORMAL): $browser_win\nDESKTOP AUDIO: $desktop_audio\nMIC/AUX AUDIO: $mic_audio")"
 
 
 if [[ "${rstatus}" == "true" && "${pstatus}" == "false" ]]; then
-    notify-send "${recording}" -u normal -i obs-tray-active
+    notify-send "RECORDING!!" "${recording}" -u normal -i obs-tray-active
 elif [[ "${pstatus}" == "true" && "${rstatus}" == "true" ]]; then
-    notify-send "${paused}" -u normal -i media-playback-paused
+    notify-send "PAUSED!!" "${paused}" -u normal -i media-playback-paused
 elif [[   "${pstatus}" == "false" && "${rstatus}" == "false"  ]]; then
-    notify-send "${not_rec}" -u normal -i obs-tray
+    notify-send "NOT RECORDING!!" "${not_rec}" -u normal -i obs-tray
 else
     notify-send "OBS NOT OPEN, NOT RECORDING!!" -u normal -i account-types-closed
 fi

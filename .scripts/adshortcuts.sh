@@ -7,4 +7,6 @@ ql=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Quick\ Launch\" \\
 cnc=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Computer\ Networks\ and\ Communication\ Systems\" \\
 em=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Engineering\ Mathematics\ I\" \\
 ie=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Industrial\ Electronics\" \\
-mce=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Microcontrollers\ and\ Embedded\ Systems\" \\">> ~/.bash-aliases
+mce=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Microcontrollers\ and\ Embedded\ Systems\" \\
+he=\"cd $HOME/Helpful\ Stuff\" \\
+stfd=\"cd $HOME/Stuff\ To\ Do\" \\">> ~/.bash-aliases
