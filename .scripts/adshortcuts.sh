@@ -10,4 +10,4 @@ ie=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Industrial\ Electr
 mce=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Microcontrollers\ and\ Embedded\ Systems\" \\
 he=\"cd $HOME/Helpful\ Stuff\" \\
 stfd=\"cd $HOME/Stuff\ To\ Do\" \\
-nbzi=\"cd $HOME/Text/Zim\ Notebooks\" \\">> ~/.bash-aliases
+zinb=\"cd $HOME/Text/Zim\ Notebooks\" \\">> ~/.bash-aliases
