@@ -38,8 +38,11 @@ function main() {
     case $choice in
         1)
             # notification ; $terminal -e sh -c "sleep 0.5; rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &"
-            notification "Uni Stuff";
+            # notification "Uni Stuff";
+            notification "$(echo -e "Uni Stuff\nMisc\nHelpful Docs")"
             sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &
+            sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &
+            sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Helpful\ Docs ~/Mounts/Drive\ Helpful\ Docs/ &
             ;;
         2)
             # notification ; $terminal -e sh -c "sleep 0.5 ; rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
