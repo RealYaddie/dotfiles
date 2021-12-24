@@ -28,6 +28,9 @@ export CARGO_HOME="$XDG_DATA_HOME"/cargo
 # Java
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 
+# Wine Gecko and Mono stuff
+# export WINEDLLOVERRIDES="mscoree,mshtml="
+
 export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"

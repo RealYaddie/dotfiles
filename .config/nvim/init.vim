@@ -75,6 +75,8 @@ set mouse=a     " Allows for scrolling in vim when running from a tmux session
 set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
 set showmatch   " set show matching parenthesis
 set scrolloff=3	    " start scrolling down screen when 8 lines away from the bottom of it
+set undodir=$HOME/.config/nvim/undodir      " directory for undo files
+set undofile            " turn on persistent undo feature
 
 " spell-check set to <leader>o, 'o' for orthography'. {Courtesy of Luke Smith}
 map <leader>o :setlocal spell! spelllang=en_us<CR>

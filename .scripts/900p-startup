@@ -9,7 +9,7 @@ else
     match="LVDS-1"
 fi
 
-sleep 2
+sleep 40
 xfce4-terminal --command="xrandr --output $match --panning 1366x768 --scale 1x1"
-sleep 1
+sleep 5
 xfce4-terminal --command="xrandr --output $match --panning 1600x900 --scale 1.171x1.171"
