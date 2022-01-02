@@ -14,7 +14,8 @@
 
 # Menu with options that will be displayed in a rofi/dmenu prompt
 function menu(){
-    printf "1. Drive Uni Stuff Folder\n"
+    # printf "1. Drive Uni Stuff Folder\n"
+    printf "1. Mount Everything\n"
     printf "2. Drive Misc Folder\n"
     printf "3. Drive Helpful Documents Folder\n"
     printf "4. Unmount All"

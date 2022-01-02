@@ -12,4 +12,5 @@ ie=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Industrial\ Electr
 mce=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Microcontrollers\ and\ Embedded\ Systems $list\" \\
 he=\"cd $HOME/Helpful\ Stuff $list\" \\
 stfd=\"cd $HOME/Stuff\ To\ Do $list\" \\
-zinb=\"cd $HOME/Text/Zim\ Notebooks $list\" \\">> ~/.bash-aliases
+zinb=\"cd $HOME/Text/Zim\ Notebooks $list\" \\
+insf=\"cd $HOME/.flyff05-wine-stable/drive_c/Program\ Files/Insanity\ Client $list\" \\">> ~/.bash-aliases
