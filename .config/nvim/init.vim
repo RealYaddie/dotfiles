@@ -20,8 +20,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'dracula/vim', { 'as': 'dracula'}
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'zchee/deoplete-jedi'
 Plug 'vim-airline/vim-airline' " Airline
 Plug 'vim-airline/vim-airline-themes'
 Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
@@ -150,7 +150,7 @@ nnoremap <silent><leader>ca :LLPStartPreview<CR>
 
 " Plugin Specific Settings - Fold 11
 " Deoplete
-let g:deoplete#enable_at_startup = 1
+" let g:deoplete#enable_at_startup = 1
 " Close the auto-complete window when we select something from it
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 " Use TAB to cycle through auto-complete options.
@@ -195,7 +195,7 @@ nnoremap <M-,> :MarkdownPreviewStop<CR>
 
 " Jedi-vim
 "disable autocompletion, because we use deoplete for completion
-let g:jedi#completions_enabled = 0
+" let g:jedi#completions_enabled = 0
 
 " open the go-to function in split, not another buffer
 " let g:jedi#use_splits_not_buffers = right
