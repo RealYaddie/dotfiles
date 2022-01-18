@@ -10,8 +10,10 @@ else
 fi
 
 # TODO: Add the different resolution options and options for playlists as well.
-# Choose what resolution to play the video in
+#       Choose what resolution to play the video in
 
-# Using a weird method to launch an empty dmenu prompt.
-link="$($DMENU -p "Link: " < ~/.scripts/WIP)"
-mpv --ytdl-format=22 "$link" &> /dev/null
+# Using a weird method to launch an empty dmenu prompt
+link="$($DMENU -p "Video Link: " < ~/.scripts/WIP)"
+mpv --ytdl-format=22 "$link" &> /dev/null &
+# Store the links of videos played using this script to a file in my home directory
+echo "$(date): $link" >> ~/mdmenu-links.txt
