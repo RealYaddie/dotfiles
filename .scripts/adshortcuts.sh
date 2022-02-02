@@ -3,7 +3,7 @@
 # variable with ls and various flags to add just before the end of the alias.
 list="&& ls -art --group-dirs first"
 
-/home/leosmith/.flyff05-wine-stable/drive_c/Program Files/Roots Flyff
+# /home/leosmith/.flyff05-wine-stable/drive_c/Program Files/Roots Flyff
 # Script to add specific directories that have spaces in them to ~/.bash-aliases
 echo -e "y3=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\) $list\" \\
 ql=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Quick\ Launch $list\" \\
