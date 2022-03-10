@@ -14,5 +14,5 @@ mce=\"cd $HOME/Desktop/CMU\ Docs/Year\ 3\ Semester\ 1\(21-22\)/Microcontrollers\
 he=\"cd $HOME/Helpful\ Stuff $list\" \\
 stfd=\"cd $HOME/Stuff\ To\ Do $list\" \\
 zinb=\"cd $HOME/Text/Zim\ Notebooks $list\" \\
-insf=\"cd $HOME/.flyff05-wine-stable/drive_c/Program\ Files/Insanity\ Client $list\" \\
-btrf=\"cd /home/leosmith/.flyff05-wine-stable/drive_c/Program\ Files/Roots\ Flyff $list\" \\">> ~/.bash-aliases
+insf=\"cd $HOME/.flyff07-wine-stable/drive_c/Program\ Files/Insanity\ Client $list\" \\
+btrf=\"cd /home/leosmith/.flyff07-wine-stable/drive_c/Program\ Files/Roots\ Flyff $list\" \\">> ~/.bash-aliases

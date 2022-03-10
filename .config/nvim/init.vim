@@ -29,7 +29,7 @@ Plug 'sbdchd/neoformat'
 Plug 'davidhalter/jedi-vim' " Jedi-vim to jump to definitions
 Plug 'scrooloose/nerdtree'
 Plug 'machakann/vim-highlightedyank'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " tabular plugin used to format tables
 Plug 'godlygeek/tabular'

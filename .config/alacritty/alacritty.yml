@@ -1,5 +1,6 @@
 TERM: alacritty
 window:
+  opacity: 0.92
   padding:
     x: 5
     y: 5
@@ -11,7 +12,6 @@ font:
     family: CaskaydiaCove Nerd Font
   style: Bold
   size: 12
-background_opacity: 0.92
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
   save_to_clipboard: true

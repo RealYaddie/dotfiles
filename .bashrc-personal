@@ -76,6 +76,8 @@ alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5
 alias school-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ mega-videos:School\ Videos -L -v"
 alias year3-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ year3-videos:School\ Videos -L -v"
 
+alias uni-copy="rclone copy /home/leosmith/Desktop/CMU\ Docs/Year3_Semester2\(21-22\)/ GDrive-Text:Uni\ Stuff/Year\ 3\ Semester\ 2 -v -L"
+
 # Mounts
 alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
 alias drive-uni-stuff="rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &"
@@ -142,6 +144,7 @@ alias m1080list="mpv --ytdl-format=299+251 --ytdl-raw-options="yes-playlist=""
 alias tma="tmux attach"
 alias tmt="tmux attach -t"
 alias tmn="tmux new -s"
+alias tmg="tmux new-session -s \"General\""
 
 # Git Stuff
 alias c='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
