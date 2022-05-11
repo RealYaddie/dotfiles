@@ -15,6 +15,7 @@ he=\"cd $HOME/Helpful\ Stuff $list\" \\
 stfd=\"cd $HOME/Stuff\ To\ Do $list\" \\
 zinb=\"cd $HOME/Text/Zim\ Notebooks $list\" \\
 insf=\"cd $HOME/.flyff07-wine-stable/drive_c/Program\ Files/Insanity\ Client $list\" \\
+evof=\"cd $HOME/.flyff07-wine-stable/drive_c/Program\ Files/Evolution-Flyff $list\" \\
 y32=\"cd $HOME/Desktop/CMU\ Docs/Year3_Semester2\(21-22\) $list\" \\
 ct=\"cd $HOME/Desktop/CMU\ Docs/Year3_Semester2\(21-22\)/Control\ I $list\" \\
 em2=\"cd $HOME/Desktop/CMU\ Docs/Year3_Semester2\(21-22\)/Engineering\ Mathematics\ II $list\" \\

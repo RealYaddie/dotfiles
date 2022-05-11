@@ -13,7 +13,10 @@ fi
 #       Choose what resolution to play the video in
 
 # Using a weird method to launch an empty dmenu prompt
-link="$($DMENU -p "Video Link: " < ~/.scripts/WIP)"
-mpv --ytdl-format=22 "$link" &> /dev/null &
+# old_link="$($DMENU -p "Video Link: " < ~/.scripts/WIP)"
+
+# Using xclip to send link directly to mpv
+# mpv "$(xclip -out)" &> /dev/null &
+mpv "$(xclip -out)"
 # Store the links of videos played using this script to a file in my home directory
 echo "$(date): $link" >> ~/mdmenu-links.txt

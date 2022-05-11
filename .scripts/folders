@@ -12,3 +12,4 @@ sc  $HOME/.scripts
 vv  $HOME/Videos
 suc $HOME/Github/suckless       # Folder to suckless software
 bk  $HOME/Desktop/Books
+gitf $HOME/Github
