@@ -17,6 +17,9 @@ fi
 
 # Using xclip to send link directly to mpv
 # mpv "$(xclip -out)" &> /dev/null &
-mpv "$(xclip -out)"
+notify-send "Link Copied to MPV" -u normal && mpv "$(xclip -out)"
+# notify-send "Link Copied to MPV" -u normal
+# mpv "$(xclip -out)"
+
 # Store the links of videos played using this script to a file in my home directory
-echo "$(date): $link" >> ~/mdmenu-links.txt
+echo "$(date): $(xclip -out)" >> ~/mdmenu-links.txt

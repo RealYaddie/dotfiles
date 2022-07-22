@@ -28,5 +28,6 @@ DMENU_P="Run: "
 TERMINAL_CMD="alacritty -e"
 
 # export our variables
-DMENU="dmenu -i -p $DMENU_P -nb $DMENU_NB -nf $DMENU_NF -sb $DMENU_SB -sf $DMENU_SF -fn $DMENU_FN"
+# DMENU="dmenu -i -p $DMENU_P -nb $DMENU_NB -nf $DMENU_NF -sb $DMENU_SB -sf $DMENU_SF -fn $DMENU_FN"
+DMENU="dmenu -i -p $DMENU_P -fn $DMENU_FN"
 # DMENU="dmenu_run -i -p 'Run:' -nb '#1B2224' -nf '#2EB398' -sb '#2EB398' -sf '#1B2224'  -fn 'CaskaydiaCove Nerd Font:bold:pixelsize=16'"
