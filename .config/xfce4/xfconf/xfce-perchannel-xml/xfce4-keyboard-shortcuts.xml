@@ -75,9 +75,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;l" type="string" value="libreoffice"/>
       <property name="&lt;Super&gt;d" type="string" value="kdocker"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;o" type="string" value="xfce4-panel"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="whatsapp-nativefier"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;e" type="string" value="/home/leosmith/.scripts/dmenuunicode"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="/home/leosmith/.scripts/meet-links.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/home/leosmith/.scripts/mounts.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;slash" type="string" value="/home/leosmith/.scripts/obs-status.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;a" type="string" value="/home/leosmith/.scripts/obs-status.sh"/>
@@ -86,6 +84,7 @@
       <property name="&lt;Super&gt;z" type="string" value="zim"/>
       <property name="&lt;Super&gt;e" type="string" value="/home/leosmith/.scripts/mdmenu.sh"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -i -p &apos;Run:&apos; -fn &apos;CaskaydiaCove Nerd Font:bold:pixelsize=16&apos;"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="/home/leosmith/.scripts/mdmenu-yt.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

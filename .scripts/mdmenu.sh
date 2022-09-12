@@ -22,4 +22,4 @@ notify-send "Link Copied to MPV" -u normal && mpv "$(xclip -out)"
 # mpv "$(xclip -out)"
 
 # Store the links of videos played using this script to a file in my home directory
-echo "$(date): $(xclip -out)" >> ~/mdmenu-links.txt
+echo "[OG]$(date): $(xclip -out)" >> ~/mdmenu-links.txt

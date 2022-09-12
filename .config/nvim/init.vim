@@ -125,6 +125,7 @@ map <leader>tk <C-w>t<C-w>K " 2 vertical splits into 2 horizontal splits
 " Buffers - Fold 7
 nnoremap <silent> <leader>bn :bnext<CR>
 nnoremap <silent> <leader>bp :bprev<CR>
+nnoremap <silent> <leader>bd :bdelete<CR>
 
 " Tabs - Fold 8
 " Better tab experience - from https://webdevetc.com/
