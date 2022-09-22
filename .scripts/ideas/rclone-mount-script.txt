@@ -1,6 +1,0 @@
-The Script is already made (~/scripts/mounts.sh) but its not complete as yet.
-
-I want the script to be able to do the following:
-- Be able to mount the selected option and send a notification with what was mounted.
-- Unmount all of the mounted folders even if all of the drives aren't currently mounted as well.(As of right now Nov 4 2021: if not all 3 folders are mounted then none of the mounted folders gets unmounted.)
-- Allow you to mount multiple folders at once instead of one at a time like how it currently works.(Might have to use printf '%s\n' to get each result returned on one line and go from there not too sure tho.)
