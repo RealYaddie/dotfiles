@@ -1,0 +1,15 @@
+# vim: filetype=sh
+# You can add comments to these files with #
+cac ${XDG_CACHE_HOME}
+cf  ${XDG_CONFIG_HOME}
+D   $HOME/Downloads
+d   $HOME/Documents
+de  $HOME/Desktop
+dt  ${XDG_DATA_HOME}
+h   $HOME
+pd  $HOME/Pictures
+sc  $HOME/.scripts
+vv  $HOME/Videos
+suc $HOME/Github/suckless       # Folder to suckless software
+bk  $HOME/Desktop/Books
+gitf $HOME/Github

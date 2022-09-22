@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# vim: filetype=sh
+
+# Simple script that displays my bash aliases file in my home folder.
+
+yad --text-info --back=#272934 --fore=#46d9ff --filename="/home/leosmith/.bash-aliases" --geometry=1400x600 --no-buttons --fontname="caskaydiacove nerd font bold 14" --center --undecorated --borders=5 &> /dev/null

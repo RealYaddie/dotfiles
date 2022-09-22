@@ -1,0 +1,16 @@
+                                      # vim: filetype=sh
+bf   $HOME/.scripts/configs           # This file, contains a list of bookmarked files
+bd   $HOME/.scripts/folders           # A list of bookmarked directories similar to this file
+
+cfx  $HOME/.Xresources                # Colors, themes and variables for X11
+cfv  ${XDG_CONFIG_HOME}/nvim/init.vim # neovim config
+cfb  $HOME/.bashrc                    # bash config
+cfbp  $HOME/.bashrc-personal
+cfba $HOME/.bash-aliases              # bash aliases file
+cfp  $HOME/.profile                   # profile file for login settings for bash
+cfvv $HOME/.vimrc                     # vim config
+cfd  $HOME/.dmenurc                   # dmenu "config" file
+cfr  $HOME/README.md                  # dotfiles github repo readme
+cfg  ${XDG_CONFIG_HOME}/git/config    # github config file
+cfas $HOME/.scripts/adshortcuts.sh    # file with additional shortcuts
+cfm  $HOME/.config/mpv/mpv.conf       # mpv config file

@@ -1,0 +1,33 @@
+#
+# ~/.dmenurc
+#
+
+# DMENU_OPTIONS
+# dmenu_run -i -p 'Run:' -nb '#1B2224' -nf '#2EB398' -sb '#2EB398' -sf
+# '#1B2224'  -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+# define the font for dmenu to be used
+DMENU_FN="monospace:bold:pixelsize=16"
+
+# background colour for unselected menu-items
+DMENU_NB="#1B2224"
+
+# textcolour for unselected menu-items
+DMENU_NF="#2EB398"
+
+# background colour for selected menu-items
+DMENU_SB="#2EB398"
+
+# textcolour for selected menu-items
+DMENU_SF="#1B2224"
+
+# text for dmenu prompt
+DMENU_P="Run: "
+
+# command for the terminal application to be used:
+TERMINAL_CMD="alacritty -e"
+
+# export our variables
+# DMENU="dmenu -i -p $DMENU_P -nb $DMENU_NB -nf $DMENU_NF -sb $DMENU_SB -sf $DMENU_SF -fn $DMENU_FN"
+DMENU="dmenu -i -p $DMENU_P -fn $DMENU_FN"
+# DMENU="dmenu_run -i -p 'Run:' -nb '#1B2224' -nf '#2EB398' -sb '#2EB398' -sf '#1B2224'  -fn 'CaskaydiaCove Nerd Font:bold:pixelsize=16'"
