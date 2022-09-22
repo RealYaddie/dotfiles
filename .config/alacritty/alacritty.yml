@@ -1,0 +1,50 @@
+TERM: alacritty
+window:
+  opacity: 0.92
+  padding:
+    x: 5
+    y: 5
+  decorations: full
+  title: Alacritty
+  dynamic_title: true
+font:
+  normal:
+    family: CaskaydiaCove Nerd Font
+  style: Bold
+  size: 10
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+cursor:
+  style:
+    shape: Block
+    blinking: Off
+    unfocused_hollow: true
+working_directory: None
+mouse:
+  double_click:
+    threshold: 300
+  triple_click:
+    threshold: 300
+colors:
+  primary:
+    background: "#282a36"
+    foreground: "#f8f8f2"
+  normal:
+    black: "#000000"
+    red: "#ff5555"
+    green: "#50fa7b"
+    yellow: "#f1fa8c"
+    blue: "#caa9fa"
+    magenta: "#ff79c6"
+    cyan: "#8be9fd"
+    white: "#bfbfbf"
+  bright:
+    black: "#575b70"
+    red: "#ff6e67"
+    green: "#5af78e"
+    yellow: "#f4f99d"
+    blue: "#caa9fa"
+    magenta: "#ff92d0"
+    cyan: "#9aedfe"
+    white: "#e6e6e6"
