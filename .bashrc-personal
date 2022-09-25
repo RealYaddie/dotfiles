@@ -71,17 +71,18 @@ alias more=less
 # Virustotal key
 source $HOME/vt-api-key
 
+win_part="/run/media/leosmith/EE6659FA6659C44D"
 # rclone Online
 
 # Syncs n' Copies
 alias Text-sync="rclone copy -i /home/leosmith/Text/ GDrive-Text:Text"
-alias Database="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Downloads/This\ be\ it.kdbx GDrive-Text:DB"
+alias Database="rclone copy -i /home/leosmith/Database/This\ be\ it.kdbx GDrive-Text:DB"
 alias backup-folder="rclone copy  /home/leosmith/Backup/ GDrive-Text:Linux\ Config\ Files/Manjaro\(current\)/ -i -L"
 alias Programming-backup="rclone copy /home/leosmith/Text\ Editor\ Stuff/ GDrive-Text:Text\ Editor\ Stuff/ -i"
 alias Valuables="rclone copy -i -L /home/leosmith/Valuables/ GDrive-Text:Valuables/"
 alias helpful="rclone sync -i /home/leosmith/Downloads/Documents/Helpful\ Docs/ GDrive-Text:Helpful\ Docs/Linux\ Stuff/"
-# alias virtualrunner-gtr="rclone sync -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
-alias talesrunner_backup-gtr="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
+# alias virtualrunner-gtr="rclone sync -i $win_part/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
+alias talesrunner_backup-gtr="rclone copy -i $win_part/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
 
 alias school-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ mega-videos:School\ Videos -L -v"
 alias year3-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ year3-videos:School\ Videos -L -v"
@@ -100,10 +101,13 @@ alias unmount-uni-stuff="fusermount -u ~/Mounts/Drive\ Uni\ Stuff/"
 alias unmount-help-docs="fusermount -u ~/Mounts/Drive\ Helpful\ Docs/"
 
 # rclone Offline
-alias local-application-folder-sync="rclone copy /home/leosmith/Stuff\ To\ Do/Application/ /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/Linux\ Application\ Folder/ -Li"
-alias GTR-VR="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/Global\ TalesRunner/VirtualRunner /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/Global\ VirtualRunner"
-alias GTR-SS="rclone copy -i /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/Global\ TalesRunner/Screenshot /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Documents/TalesRunner/Global\ Screenshots"
-alias backup-talesrunner="GTR-VR && GTR-SS && talesrunner_backup-gtr"
+alias dbwin="rclone copy -i /home/leosmith/Database/This\ be\ it.kdbx $win_part/Users/unkno/Desktop/"
+alias uniwin="rclone copy -iL /home/leosmith/Desktop/CMU\ Docs/ $win_part/Users/unkno/Desktop/CMU-Docs-Folder/"
+
+# alias local-application-folder-sync="rclone copy /home/leosmith/Stuff\ To\ Do/Application/ $win_part/Users/LeoSmith/Desktop/Linux\ Application\ Folder/ -Li"
+# alias GTR-VR="rclone copy -i $win_part/Users/LeoSmith/Documents/Global\ TalesRunner/VirtualRunner $win_part/Users/LeoSmith/Documents/TalesRunner/Global\ VirtualRunner"
+# alias GTR-SS="rclone copy -i $win_part/Users/LeoSmith/Documents/Global\ TalesRunner/Screenshot $win_part/Users/LeoSmith/Documents/TalesRunner/Global\ Screenshots"
+# alias backup-talesrunner="GTR-VR && GTR-SS && talesrunner_backup-gtr"
 
 # Directories
 alias pystuff="cd $HOME/Text\ Editor\ Stuff/"
@@ -112,8 +116,8 @@ alias txmk="cd $HOME/Text/Markdown\ Notes/"
 alias cmu="cd $HOME/Desktop/CMU\ Docs/"
 alias school-stuff="cd $HOME/Downloads/Documents/School\ Stuff"
 alias application="cd $HOME/Desktop/Application/"
-alias desktop_win="cd /run/media/leosmith/1404235A04233E5C/Users/LeoSmith/Desktop/"
-alias other-drive="cd /run/media/leosmith/1404235A04233E5C/"
+alias desktop_win="cd $win_part/Users/LeoSmith/Desktop/"
+alias other-drive="cd $win_part/"
 
 # Docker Commands
 alias docker-start="systemctl start --now docker.service docker.socket tccd.service tccd-sleep.service"
@@ -175,3 +179,4 @@ HISTSIZE= HISTFILESIZE=
 alias scc="scc 2>/dev/null"     # Displays shortcuts in ~/.bash-aliases
 alias keys="sh ~/.scripts/shortcuts && ~/.scripts/adshortcuts.sh; source ~/.bashrc"
 source ~/.bash-aliases
+export PATH=$PATH:/home/leosmith/.scripts
