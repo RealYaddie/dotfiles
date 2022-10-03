@@ -168,6 +168,9 @@ alias vgf="virusgotal file"
 alias vgu="virusgotal url"
 alias vgh="virusgotal hash"
 
+# CPU Stuff
+alias governor="cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
+
 # Making the History size infinite
 HISTSIZE= HISTFILESIZE=
 
@@ -179,4 +182,3 @@ HISTSIZE= HISTFILESIZE=
 alias scc="scc 2>/dev/null"     # Displays shortcuts in ~/.bash-aliases
 alias keys="sh ~/.scripts/shortcuts && ~/.scripts/adshortcuts.sh; source ~/.bashrc"
 source ~/.bash-aliases
-export PATH=$PATH:/home/leosmith/.scripts

@@ -61,7 +61,6 @@
       <property name="&lt;Super&gt;b" type="string" value="exo-open --launch WebBrowser"/>
       <property name="&lt;Super&gt;g" type="string" value="gimp"/>
       <property name="&lt;Super&gt;k" type="string" value="kdenlive"/>
-      <property name="&lt;Super&gt;s" type="string" value="simplenote"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;g" type="string" value="cpupower-gui"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;s" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
@@ -85,6 +84,7 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="/home/leosmith/.scripts/mdmenu-yt.sh"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -p &apos;Run:&apos; -fn &apos;CaskaydiaCove Nerd Font:bold:pixelsize=16&apos;"/>
+      <property name="&lt;Super&gt;s" type="string" value="simplenote --no-sandbox"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

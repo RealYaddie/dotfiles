@@ -14,3 +14,4 @@ cfr  $HOME/README.md                  # dotfiles github repo readme
 cfg  ${XDG_CONFIG_HOME}/git/config    # github config file
 cfas $HOME/.scripts/adshortcuts.sh    # file with additional shortcuts
 cfm  $HOME/.config/mpv/mpv.conf       # mpv config file
+cfa  $HOME/.config/alacritty/alacritty.yml # Alacritty config

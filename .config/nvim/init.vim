@@ -12,8 +12,8 @@ call plug#begin('~/.local/share/nvim/site/autoload')
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'gruvbox-community/gruvbox'
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-Plug 'junegunn/seoul256.vim'
+" Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+" Plug 'junegunn/seoul256.vim'
 Plug 'ron89/thesaurus_query.vim', { 'on': 'ThesaurusQueryReplaceCurrentWord', 'for': 'txt'}
 Plug 'dpelle/vim-LanguageTool', { 'on': 'LanguageToolCheck' }
 Plug 'junegunn/goyo.vim'
@@ -26,7 +26,7 @@ Plug 'vim-airline/vim-airline' " Airline
 Plug 'vim-airline/vim-airline-themes'
 Plug 'LunarWatcher/auto-pairs', { 'tag': '*' }
 Plug 'sbdchd/neoformat'
-Plug 'davidhalter/jedi-vim' " Jedi-vim to jump to definitions
+" Plug 'davidhalter/jedi-vim' " Jedi-vim to jump to definitions
 Plug 'scrooloose/nerdtree'
 Plug 'machakann/vim-highlightedyank'
 " Plug 'SirVer/ultisnips'
