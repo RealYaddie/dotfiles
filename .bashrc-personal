@@ -81,6 +81,7 @@ alias backup-folder="rclone copy  /home/leosmith/Backup/ GDrive-Text:Linux\ Conf
 alias Programming-backup="rclone copy /home/leosmith/Text\ Editor\ Stuff/ GDrive-Text:Text\ Editor\ Stuff/ -i"
 alias Valuables="rclone copy -i -L /home/leosmith/Valuables/ GDrive-Text:Valuables/"
 alias helpful="rclone sync -i /home/leosmith/Downloads/Documents/Helpful\ Docs/ GDrive-Text:Helpful\ Docs/Linux\ Stuff/"
+alias books="rclone copy -iv /home/leosmith/Desktop/Books GDrive-Text:Books/"
 # alias virtualrunner-gtr="rclone sync -i $win_part/Users/LeoSmith/Documents/TalesRunner/VirtualRunner/ GDrive-Text:TalesRunner\ VirtualRunner\ Files/"
 alias talesrunner_backup-gtr="rclone copy -i $win_part/Users/LeoSmith/Documents/TalesRunner/ GDrive-Text:Global\ Talesrunner\ Backup/"
 
@@ -88,6 +89,9 @@ alias school-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Vid
 alias year3-vids="rclone copy /home/leosmith/Videos/OBS\ Recordings/School\ Videos/ year3-videos:School\ Videos -L -v"
 
 alias uni-copy="rclone copy /home/leosmith/Desktop/CMU\ Docs/Year3_Semester2\(21-22\)/ GDrive-Text:Uni\ Stuff/Year\ 3\ Semester\ 2 -v -L"
+alias year4-copy="rclone copy -vi /home/leosmith/Desktop/CMU\ Docs/Year\ 4\ Semester\ 1\(22-23\) GDrive-Text:Uni\ Stuff/Year\ 4\ Semester\ 1"
+alias cmu-help="rclone copy -vi /home/leosmith/Desktop/CMU\ Docs/Helpful GDrive-Text:Uni\ Stuff/Helpful\ Resources/"
+alias cmu-important="rclone copy -vi /home/leosmith/Desktop/CMU\ Docs/Important\ Documents/ GDrive-Text:Uni\ Stuff/Important/CMU\ Important\ Documents/"
 
 # Mounts
 alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"

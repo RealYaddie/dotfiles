@@ -42,3 +42,7 @@ export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
 
 export PATH="$HOME/.local/bin:$HOME/.scripts:$PATH"
 # export npm_config_prefix="$HOME/.local"
+
+# To install third-party Jupyter Notebook extensions for the current user, use the --user option while executing jupyter nbextension install.
+# To do the same for installation of JupyterLab extensions, set the following environment variable:
+JUPYTERLAB_DIR=$HOME/.local/share/jupyter/lab

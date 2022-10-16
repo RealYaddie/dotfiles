@@ -2,6 +2,7 @@
 
 check=$(xrandr | awk '/^LVDS/ {print $1}')
 match="LVDS1"
+change_win="wmctrl -i -r `wmctrl -l | grep "Task Manager"` -e 0,0,0,1600,751"
 
 if [ "$check" = "$match" ]; then
     match="LVDS1"
@@ -11,4 +12,4 @@ fi
 
 xfce4-terminal --command="xrandr --output $match --panning 1366x768 --scale 1x1"
 sleep 0.5
-xfce4-terminal --command="xrandr --output $match --panning 1600x900 --scale 1.171x1.171"
+xfce4-terminal --command="xrandr --output $match --panning 1600x900 --scale 1.171x1.171" && $change_win

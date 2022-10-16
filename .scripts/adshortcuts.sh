@@ -23,4 +23,5 @@ ie2=\"cd $HOME/Desktop/CMU\ Docs/Year3_Semester2\(21-22\)/Industrial\ Electronic
 ii=\"cd $HOME/Desktop/CMU\ Docs/Year3_Semester2\(21-22\)/Industrial\ Instrumentation\ I $list\" \\
 res=\"cd $HOME/Desktop/CMU\ Docs/Year3_Semester2\(21-22\)/Research\ Methods $list\" \\
 btrf=\"cd /home/leosmith/.flyff07-wine-stable/drive_c/Program\ Files/Roots\ Flyff $list\" \\
-cds=\"cd /home/leosmith/Desktop/CMU\ Docs/ $list\" \\">> ~/.bash-aliases
+cds=\"cd /home/leosmith/Desktop/CMU\ Docs/ $list\" \\
+md=\"cd /home/leosmith/Text/Markdown\ Notes/ $list\" \\">> ~/.bash-aliases
