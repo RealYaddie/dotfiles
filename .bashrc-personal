@@ -17,6 +17,7 @@ set -o vi
 # clear screen while while vi mode is active.
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
+alias v="nvim"
 
 
 # ignore upper and lowercase when TAB completion

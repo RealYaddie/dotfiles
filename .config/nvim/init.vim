@@ -39,6 +39,7 @@ Plug 'plasticboy/vim-markdown'
 " if you don't have node and yarn, use pre build
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 " Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
+Plug 'dhruvasagar/vim-table-mode'
 call plug#end()
 
 " Colors, Tabs and UI Config and Remapping leader - Fold 3
