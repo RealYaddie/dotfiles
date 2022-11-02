@@ -263,5 +263,8 @@ autocmd BufWritePre * %s/\n\+\%$//e
 " Replace all is aliased to S.
 nnoremap S :%s//g<Left><Left>
 
+" Add space HTML character for markdown files
+autocmd FileType * inoremap ;sp &#32;
+
 set modelines=1
 " vim:foldmethod=marker:foldlevel=0
