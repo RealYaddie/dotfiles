@@ -83,8 +83,8 @@
       <property name="&lt;Super&gt;e" type="string" value="/home/leosmith/.scripts/mdmenu.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;r" type="string" value="/home/leosmith/.scripts/mdmenu-yt.sh"/>
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -p &apos;Run:&apos; -fn &apos;CaskaydiaCove Nerd Font:bold:pixelsize=16&apos;"/>
       <property name="&lt;Super&gt;s" type="string" value="simplenote --no-sandbox"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -p &apos;Run:&apos; -fn &apos;CaskaydiaCove Nerd Font:bold:pixelsize=16&apos;"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
