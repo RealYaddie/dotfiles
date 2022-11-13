@@ -17,9 +17,7 @@ fi
 
 # Using xclip to send link directly to mpv
 # mpv "$(xclip -out)" &> /dev/null &
-notify-send "Youtube Link Copied to MPV" -u normal && mpv --ytdl-format=22 "$(xclip -out)"
-# notify-send "Link Copied to MPV" -u normal
-# mpv "$(xclip -out)"
+notify-send "Youtube Link Copied to MPV" -u normal && mpv --ytdl-format=22 "$(xsel -b -o)"
 
 # Store the links of videos played using this script to a file in my home directory
 echo "[720P]$(date): $(xclip -out)" >> /home/leosmith/mdmenu-links.txt

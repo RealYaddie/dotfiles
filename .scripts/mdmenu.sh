@@ -17,7 +17,8 @@ fi
 
 # Using xclip to send link directly to mpv
 # mpv "$(xclip -out)" &> /dev/null &
-notify-send "Link Copied to MPV" -u normal && mpv "$(xclip -out)"
+# notify-send "Link Copied to MPV" -u normal && mpv "$(xclip -out)"
+notify-send "Link Copied to MPV" -u normal && mpv "$(xsel -b -o)"
 # notify-send "Link Copied to MPV" -u normal
 # mpv "$(xclip -out)"
 
