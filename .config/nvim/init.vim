@@ -1,10 +1,5 @@
 " Python stuff for virtual environments - Fold 1
 " let g:python3_host_prog = '/home/leosmith/.pyenv/versions/py3nvim/bin/python3'
-" let g:python_host_prog = '/home/leosmith/.pyenv/versions/py2nvim/bin/python'
-
-" Stuff to add nvim-from-vim
-let &packpath = &runtimepath
-"source ~/.vimrc
 
 " Plugins Section  - Fold 2
 call plug#begin('~/.local/share/nvim/site/autoload')
@@ -40,6 +35,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
 " Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'djoshea/vim-autoread'
 call plug#end()
 
 " Colors, Tabs and UI Config and Remapping leader - Fold 3
@@ -50,7 +46,6 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set t_Co=256
 
 let g:limelight_conceal_ctermfg = 1
-" colorscheme seoul256
 " Allows for transparent background in neovim from :h dracula & https://github.com/dracula/vim/issues/88
 let g:dracula_colorterm = 0
 colorscheme dracula
@@ -68,6 +63,7 @@ set number	" show line numbers
 set relativenumber
 set showcmd	" show command in the bottom bar
 set cursorline	" highlight the current line
+" highlight CursorLine ctermbg=LightBlue cterm=None term=None
 set lazyredraw	" redraw the screen only when we need to.
 set incsearch	" search as characters are entered
 set hlsearch	" highlight matches
@@ -78,11 +74,25 @@ set showmatch   " set show matching parenthesis
 set scrolloff=3	    " start scrolling down screen when 8 lines away from the bottom of it
 set undodir=$HOME/.config/nvim/undodir      " directory for undo files
 set undofile            " turn on persistent undo feature
+" set ruler               " Show the cursor position all the time
+set cmdheight=1         " More space for displaying messages
+set updatetime=300      " Faster completion
+set timeoutlen=500      " By default timeoutlen is 1000 ms
+set formatoptions-=cro  " Stop newline continution of comments
+"set autochdir          " Your working directory will always be the same as your working directory
+set pumheight=10        " Makes popup menu smaller
+set showtabline=2       " Always show tabs
+
+" Resetting cursorline option everytime I enter vim(colorscheme always changes it)
+augroup CustomCursorLine
+    au!
+    au VimEnter * :hi! CursorLine gui=underline cterm=underline
+augroup END
 
 " spell-check set to <leader>o, 'o' for orthography'. {Courtesy of Luke Smith}
 map <leader>o :setlocal spell! spelllang=en_us<CR>
 
-let mapleader=" " 	" Map the leader key to spacebar
+let g:mapleader= " " "Map the leader key to spacebar
 nnoremap <leader><CR> :noh<CR>  " disables highlight on search results.
 
 " Terminal Settings
@@ -96,8 +106,7 @@ inoremap <C-E> <C-X><C-E>
 inoremap <C-Y> <C-X><C-Y>
 
 " Folding - Fold 5
-" za opens/closes the folder around current fold block/ zR opens all folds in
-" a document with them
+" za opens/closes the folder around current fold block/ zR opens all folds in a document with them
 set foldenable
 set foldlevelstart=10	" open most folds by default
 set foldmethod=indent	" fold base on indent level
@@ -112,10 +121,10 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Make adjusting split sizes a bit more friendly
-nnoremap <silent> <C-Left> :vertical resize +3<CR>
-nnoremap <silent> <C-Right> :vertical resize -3<CR>
-nnoremap <silent> <C-Up> :resize +3<CR>
-nnoremap <silent> <C-Down> :resize -3<CR>
+nnoremap <silent> <M-Left> :vertical resize +3<CR>
+nnoremap <silent> <M-Right> :vertical resize -3<CR>
+nnoremap <silent> <M-Up> :resize +3<CR>
+nnoremap <silent> <M-Down> :resize -3<CR>
 
 " Change 2 split windows from vertical to horizontal or horizontal to vertical
 map <leader>th <C-w>t<C-w>H " 2 horizontal splits into 2 vertical splits
@@ -144,19 +153,13 @@ nnoremap <leader>h :tabnew<CR>:help<CR><C-w><C-w>:quit<CR>
 nnoremap <M-o> o<Esc> " Newline below
 nnoremap <M-S-O> O<Esc> " Newline above
 
-" Vim-latexsuite Stuff - Fold 10
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor = "latex"
-" set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after	" vim-latexsuite installs in /usr/share/vim/vimfiles
-nnoremap <silent><leader>ca :LLPStartPreview<CR>
-
 " Plugin Specific Settings - Fold 11
 " Deoplete
 " let g:deoplete#enable_at_startup = 1
 " Close the auto-complete window when we select something from it
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 " Use TAB to cycle through auto-complete options.
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Ultisnips
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
