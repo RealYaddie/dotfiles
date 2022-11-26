@@ -9,8 +9,8 @@ window:
   dynamic_title: true
 font:
   normal:
-    family: CaskaydiaCove Nerd Font
-  style: Bold
+    family: Iosevka
+    style: Medium
   size: 10
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
