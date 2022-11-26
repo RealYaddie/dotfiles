@@ -32,9 +32,8 @@ map <leader>tk <C-w>t<C-w>K " 2 vertical splits into 2 horizontal splits
 
 " Shortened buffer navigations
 " TAB in general mode will move to next buffer
-nnoremap <silent> <leader>bn :bnext<CR>
-nnoremap <silent> <leader>bp :bprev<CR>
-nnoremap <silent> <leader>bd :bdelete<CR>
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR> "SHIFT-TAB will go back
 
 " Better tab experience - from https://webdevetc.com/
 map <silent> <leader>tn :tabnew<CR>
