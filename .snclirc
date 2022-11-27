@@ -1,0 +1,22 @@
+[sncli]
+cfg_default_markdown = yes
+
+# if this editor config value is not provided, the $EDITOR env var will be used instead
+# warning: if neither $EDITOR or cfg_editor is set, it will be impossible to edit notes
+cfg_editor = nvim
+
+# Change default Temp file directory to avoid data loss
+cfg_tempdir = /home/leosmith/.sncli/tmp/
+
+# note that values must not be quoted
+
+# Background color of note currently hovered over
+clr_note_focus_bg = black
+# background color when viewing previous version of note
+clr_note_content_old_focus_bg = black
+# background color in help section
+clr_help_focus_bg = black
+# background color in the input bar for: search, tags, trash etc.
+clr_user_input_bar_bg = black
+# background color when viewing notes with 'ENTER'
+clr_note_content_focus_bg = black
