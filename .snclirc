@@ -1,4 +1,6 @@
 [sncli]
+cfg_sn_password_eval = gpg --quiet --for-your-eyes-only --no-tty --decrypt ~/.sncli-pass.gpg
+
 cfg_default_markdown = yes
 
 # if this editor config value is not provided, the $EDITOR env var will be used instead
