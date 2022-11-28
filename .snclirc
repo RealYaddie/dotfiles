@@ -11,8 +11,9 @@ cfg_editor = nvim
 cfg_tempdir = /home/leosmith/.sncli/tmp/
 
 # Setting a custom pager and changing default keybind
-cfg_pager = /usr/bin/bat
-kb_view_note_ext = meta j
+#cfg_pager = /usr/bin/bat
+cfg_pager = /usr/bin/mdless
+kb_view_note_ext = ctrl k
 
 # note that values must not be quoted
 
