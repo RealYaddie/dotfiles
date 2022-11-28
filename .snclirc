@@ -10,6 +10,10 @@ cfg_editor = nvim
 # Change default Temp file directory to avoid data loss
 cfg_tempdir = /home/leosmith/.sncli/tmp/
 
+# Setting a custom pager and changing default keybind
+cfg_pager = /usr/bin/bat
+kb_view_note_ext = meta j
+
 # note that values must not be quoted
 
 # Background color of note currently hovered over
