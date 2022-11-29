@@ -177,7 +177,11 @@ alias vgh="virusgotal hash"
 # CPU Stuff
 alias governor="cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor"
 
+# Simplenote CLI
 source /home/leosmith/.sncli/login/email
+
+# McFly Ctrl-r shell history search
+source /usr/share/doc/mcfly/mcfly.bash
 
 # Making the History size infinite
 HISTSIZE= HISTFILESIZE=

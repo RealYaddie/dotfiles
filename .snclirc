@@ -27,3 +27,7 @@ clr_help_focus_bg = black
 clr_user_input_bar_bg = black
 # background color when viewing notes with 'ENTER'
 clr_note_content_focus_bg = black
+
+
+
+; vim:ft=bash
