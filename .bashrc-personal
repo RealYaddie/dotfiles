@@ -186,7 +186,7 @@ source /usr/share/doc/mcfly/mcfly.bash
 export MCFLY_HISTORY=/home/leosmith/.local/share/bash/history
 
 # GPG Stuff
-alias backhist="gpg -c --cipher-algo AES256 /home/leosmith/.local/share/bash/history && rclone copy /home/leosmith/.local/share/bash/history.gpg GDrive-Text:Linux\ Shiet"
+alias backhist="gpg -c --cipher-algo AES256 /home/leosmith/.local/share/bash/history && rclone -v copy /home/leosmith/.local/share/bash/history.gpg GDrive-Text:Linux\ Shiet"
 
 # Making the History size infinite
 HISTSIZE= HISTFILESIZE=
