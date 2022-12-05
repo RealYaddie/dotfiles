@@ -27,6 +27,7 @@ plc4=\"cd $HOME/Desktop/CMU\ Docs/Year\ 4\ Semester\ 1\(22-23\)/PLCs\ Microcompu
 ml4=\"cd $HOME/Desktop/CMU\ Docs/Year\ 4\ Semester\ 1\(22-23\)/Machine\ Learning\ Fundamentals $list\" \\
 ii4=\"cd $HOME/Desktop/CMU\ Docs/Year\ 4\ Semester\ 1\(22-23\)/Industrial\ Instrumentation\ II $list\" \\
 ct4=\"cd $HOME/Desktop/CMU\ Docs/Year\ 4\ Semester\ 1\(22-23\)/Controls\ II $list\" \\
+fp4=\"cd $HOME/Desktop/CMU\ Docs/Year\ 4\ Semester\ 1\(22-23\)/Final\ Year\ Project $list\" \\
 btrf=\"cd /home/leosmith/.flyff07-wine-stable/drive_c/Program\ Files/Roots\ Flyff $list\" \\
 cds=\"cd /home/leosmith/Desktop/CMU\ Docs/ $list\" \\
 md=\"cd /home/leosmith/Text/Markdown\ Notes/ $list\" \\">> ~/.bash-aliases
