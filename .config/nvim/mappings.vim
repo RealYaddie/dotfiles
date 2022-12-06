@@ -88,3 +88,12 @@ nnoremap <leader>GG :Goyo!<CR>
 
 " Replace all is aliased to S.
 nnoremap S :%s//g<Left><Left>
+
+" Quality of Life(QOL) Remanps
+" Ctrl-d & u center the cursor on the screen
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" When searching center the cursor on the screen, and do a zv fold
+nnoremap n nzzzv
+nnoremap N Nzzzv
