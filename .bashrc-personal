@@ -188,8 +188,6 @@ export MCFLY_HISTORY=/home/leosmith/.local/share/bash/history
 # GPG Stuff
 alias backhist="gpg -c --cipher-algo AES256 /home/leosmith/.local/share/bash/history && rclone -v copy /home/leosmith/.local/share/bash/history.gpg GDrive-Text:Linux\ Shiet"
 
-# Making the History size infinite
-HISTSIZE= HISTFILESIZE=
 
 # Pyenv init
 # eval "$(pyenv init -)"
@@ -199,3 +197,17 @@ HISTSIZE= HISTFILESIZE=
 alias scc="scc 2>/dev/null"     # Displays shortcuts in ~/.bash-aliases
 alias keys="sh ~/.scripts/shortcuts && ~/.scripts/adshortcuts.sh; source ~/.bashrc"
 source ~/.bash-aliases
+
+# History
+# Making the History size infinite
+export HISTFILESIZE=-1
+export HISTSIZE=-1
+
+# Adding a timestamp to each history entry
+export HISTTIMEFORMAT="[%F %T] "
+
+# Force prompt to write history after every command.
+# http://superuser.com/questions/20900/bash-history-loss
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+export HISTCONTROL=ignoredups
