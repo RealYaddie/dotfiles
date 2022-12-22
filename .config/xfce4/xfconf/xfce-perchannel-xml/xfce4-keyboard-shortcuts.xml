@@ -29,6 +29,7 @@
       <property name="&lt;Super&gt;r" type="empty">
         <property name="startup-notify" type="empty"/>
       </property>
+      <property name="&lt;Alt&gt;&lt;Super&gt;s" type="empty"/>
       <property name="&lt;Control&gt;&lt;Alt&gt;Delete" type="empty"/>
       <property name="&lt;Control&gt;Escape" type="empty"/>
     </property>
@@ -84,7 +85,6 @@
       <property name="&lt;Alt&gt;F1" type="string" value="xfce4-popup-whiskermenu"/>
       <property name="&lt;Super&gt;s" type="string" value="simplenote --no-sandbox"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -p &apos;Run:&apos; -fn &apos;CaskaydiaCove Nerd Font:bold:pixelsize=16&apos;"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;m" type="string" value="/home/leosmith/.scripts/mounts.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/home/leosmith/.scripts/ocr_script.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;f" type="string" value="/home/leosmith/.scripts/web_highlight.sh"/>
     </property>
@@ -145,8 +145,8 @@
       <property name="&lt;Primary&gt;F12" type="empty"/>
       <property name="&lt;Super&gt;KP_Left" type="empty"/>
       <property name="&lt;Super&gt;KP_Right" type="empty"/>
-      <property name="&lt;Super&gt;KP_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Down" type="empty"/>
+      <property name="&lt;Super&gt;KP_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Page_Up" type="empty"/>
       <property name="&lt;Super&gt;KP_Home" type="empty"/>
       <property name="&lt;Super&gt;KP_End" type="empty"/>
