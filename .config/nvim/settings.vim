@@ -53,5 +53,9 @@ set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
 highlight ColorColumn ctermbg=8 guibg=lightgrey
 
+"Spellcheck
+"Enabling spell check all the time
+set spell
+
 set modelines=1
 " vim:foldmethod=marker:foldlevel=0
