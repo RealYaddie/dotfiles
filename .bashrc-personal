@@ -211,3 +211,6 @@ export HISTTIMEFORMAT="[%F %T] "
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 export HISTCONTROL=ignoredups
+
+# NVM stuff
+source /usr/share/nvm/init-nvm.sh
