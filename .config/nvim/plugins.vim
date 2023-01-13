@@ -34,6 +34,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 " Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }   "Code-completion engine
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'djoshea/vim-autoread'
+Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+Plug 'moll/vim-bbye'
 call plug#end()
 
 " Plugin Specific Settings
@@ -102,3 +105,17 @@ let g:neoformat_basic_format_trim = 1 " Enable trimmming of trailing whitespace
 
 " Auto Pairs LunarWatcher
 let g:AutoPairsMapBS=1
+
+"Bufferline
+set termguicolors
+lua << EOF
+require("bufferline").setup{
+        options = {
+            mode = "buffers", -- set to "tabs" to only show tabpages instead
+            numbers = "none",
+            close_command = "Bdelete! %d",       -- can be a string | function, see "Mouse actions"
+            right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
+            left_mouse_command = "buffer %d",    -- can be a string | function, see "Mouse actions"
+        }
+        }
+EOF

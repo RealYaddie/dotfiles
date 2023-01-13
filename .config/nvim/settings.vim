@@ -51,7 +51,7 @@ let g:highlightedyank_highlight_duration = 250 " Set highlight duration time to 
 " Ruler
 set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
-highlight ColorColumn ctermbg=8 guibg=lightgrey
+" highlight ColorColumn ctermbg=8 guibg=lightgrey
 
 "Spellcheck
 "Enabling spell check all the time
