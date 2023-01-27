@@ -18,6 +18,7 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
+" The ReGex matching excludes .md and .mkd files from this autocmd
 autocmd BufWritePre *\(.md\|.mkd\)\@<! %s/\s\+$//e
 autocmd BufWritePre *\(.md\|.mkd\)\@<! %s/\n\+\%$//e
 
