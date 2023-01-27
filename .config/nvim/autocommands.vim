@@ -18,8 +18,8 @@ autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
 " Automatically deletes all trailing whitespace and newlines at end of file on save.
-autocmd BufWritePre * %s/\s\+$//e
-autocmd BufWritePre * %s/\n\+\%$//e
+autocmd BufWritePre *\(.md\|.mkd\)\@<! %s/\s\+$//e
+autocmd BufWritePre *\(.md\|.mkd\)\@<! %s/\n\+\%$//e
 
 " Add space HTML character for markdown files
 autocmd FileType * inoremap ;sp &#32;
