@@ -3,7 +3,7 @@ Xcursor.theme: Qogir
 Xcursor.size: 16
 
 !! Transparency (0-1):
-*.alpha: 0.92
+*.alpha: 0.95
 st.alphaOffset: 0.3
 
 
