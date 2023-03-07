@@ -93,3 +93,10 @@ nnoremap <C-u> <C-u>zz
 " When searching center the cursor on the screen, and do a zv fold
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" Remap up & down to go down visual lines; did the same for going to the end
+" and start of the line as well
+nnoremap j gj
+nnoremap k gk
+nnoremap 0 g0
+nnoremap $ g$
