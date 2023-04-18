@@ -141,12 +141,13 @@ alias KIVY="source venv/bin/activate"
 alias GALAXY="source venv/bin/activate"
 
 # Shortening
-# General
+# General QoL
 alias lmr="ls -rt --color=auto"
 alias lmar="ls -rat --color=auto"
 alias lsdi="ls -d */ --color=auto"
 alias ldir="ls --group-dirs first"
 alias librepdf="libreoffice --headless --convert-to pdf"
+alias sync_uni="year4-sync && uni-sync && uniwin"
 
 # youtube-dl
 alias audio-youtubedl="youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
