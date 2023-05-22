@@ -107,8 +107,8 @@ alias unmount-uni-stuff="fusermount -u ~/Mounts/Drive\ Uni\ Stuff/"
 alias unmount-help-docs="fusermount -u ~/Mounts/Drive\ Helpful\ Docs/"
 
 # rclone Offline
-alias dbwin="rclone sync -i /home/leosmith/Database/This\ be\ it.kdbx $win_part/Users/unkno/Desktop/"
-alias uniwin="rclone sync -vL /home/leosmith/Desktop/CMU\ Docs/ $win_part/Users/unkno/Desktop/CMU-Docs-Folder/"
+alias dbwin="rclone sync -i /home/leosmith/Database/This\ be\ it.kdbx $win_part/Users/Leo/Desktop/"
+alias uniwin="rclone sync -vL /home/leosmith/Desktop/CMU\ Docs/ $win_part/Users/Leo/Desktop/CMU-Docs-Folder/"
 
 # alias local-application-folder-sync="rclone copy /home/leosmith/Stuff\ To\ Do/Application/ $win_part/Users/LeoSmith/Desktop/Linux\ Application\ Folder/ -Li"
 # alias GTR-VR="rclone copy -i $win_part/Users/LeoSmith/Documents/Global\ TalesRunner/VirtualRunner $win_part/Users/LeoSmith/Documents/TalesRunner/Global\ VirtualRunner"
