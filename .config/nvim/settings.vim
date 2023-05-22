@@ -48,8 +48,6 @@ set t_Co=256
 
 hi HighlightedyankRegion cterm=reverse gui=reverse " Highlighted Yank Region
 let g:highlightedyank_highlight_duration = 250 " Set highlight duration time to 1000ms aka 1 second.
-" Ruler
-set colorcolumn=80
 " highlight ColorColumn ctermbg=0 guibg=lightgrey
 " highlight ColorColumn ctermbg=8 guibg=lightgrey
 

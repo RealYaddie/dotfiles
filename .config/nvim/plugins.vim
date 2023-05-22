@@ -37,12 +37,14 @@ Plug 'djoshea/vim-autoread'
 Plug 'nvim-tree/nvim-web-devicons' " Recommended (for coloured icons)
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 Plug 'moll/vim-bbye'
+Plug 'markvincze/panda-vim'
 call plug#end()
 
 " Plugin Specific Settings
 " Allows for transparent background in neovim from :h dracula & https://github.com/dracula/vim/issues/88
 let g:dracula_colorterm = 0
 colorscheme dracula
+" color panda
 
 let g:limelight_conceal_ctermfg = 1
 

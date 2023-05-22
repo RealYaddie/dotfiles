@@ -5,6 +5,7 @@ set default-bg \#2f343f
 
 set selection-clipboard clipboard
 set recolor-keephue
+set recolor true
 set font Hack normal 9
 set window-title-basename true
 set window-title-home-tilde true
