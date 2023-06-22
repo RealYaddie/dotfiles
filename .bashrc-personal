@@ -147,7 +147,7 @@ alias lmar="ls -rat --color=auto"
 alias lsdi="ls -d */ --color=auto"
 alias ldir="ls --group-dirs first"
 alias librepdf="libreoffice --headless --convert-to pdf"
-alias sync_uni="year4-sync && uni-sync && uniwin"
+alias us="year4-sync && uni-sync && uniwin"
 
 # youtube-dl
 alias audio-youtubedl="youtube-dl --extract-audio --audio-format mp3 -o '%(title)s.%(ext)s'"
@@ -215,3 +215,6 @@ export HISTCONTROL=ignoredups
 
 # NVM stuff
 source /usr/share/nvm/init-nvm.sh
+
+# Note Taking
+alias todo="sncli --key=65a573bda4774808bf65bea6df2adebe edit"
