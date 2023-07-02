@@ -95,6 +95,8 @@ alias year4-sync="rclone sync -v /home/leosmith/Desktop/CMU\ Docs/Year\ 4\ Semes
 alias cmu-help="rclone copy -v /home/leosmith/Desktop/CMU\ Docs/Helpful GDrive-Text:Uni\ Stuff/Helpful\ Resources/"
 alias cmu-important="rclone copy -v /home/leosmith/Desktop/CMU\ Docs/Important\ Documents/ GDrive-Text:Uni\ Stuff/Important/CMU\ Important\ Documents/"
 
+alias re="rclone copy -v /home/leosmith/Desktop/Real_Estate_Course GDrive-Text:Real_Estate_Stuff/Course"
+
 # Mounts
 alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
 alias drive-uni-stuff="rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &"
@@ -215,6 +217,3 @@ export HISTCONTROL=ignoredups
 
 # NVM stuff
 source /usr/share/nvm/init-nvm.sh
-
-# Note Taking
-alias todo="sncli --key=65a573bda4774808bf65bea6df2adebe edit"

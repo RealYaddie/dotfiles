@@ -72,7 +72,6 @@
       <property name="&lt;Primary&gt;&lt;Alt&gt;o" type="string" value="xfce4-panel"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;e" type="string" value="/home/leosmith/.scripts/dmenuunicode"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;slash" type="string" value="/home/leosmith/.scripts/obs-status.sh"/>
-      <property name="&lt;Primary&gt;&lt;Alt&gt;a" type="string" value="/home/leosmith/.scripts/obs-status.sh"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;m" type="string" value="sh /home/leosmith/.scripts/move-to-workspace2.sh"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;g" type="string" value="/home/leosmith/.scripts/scc"/>
       <property name="&lt;Super&gt;z" type="string" value="zim"/>
@@ -83,6 +82,7 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;d" type="string" value="dmenu_run -p &apos;Run:&apos; -fn &apos;CaskaydiaCove Nerd Font:bold:pixelsize=16&apos;"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;b" type="string" value="/home/leosmith/.scripts/ocr_script.sh"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;f" type="string" value="/home/leosmith/.scripts/web_highlight.sh"/>
+      <property name="&lt;Primary&gt;&lt;Alt&gt;a" type="string" value="/home/leosmith/.scripts/music_yt.sh"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
