@@ -3,8 +3,8 @@ Xcursor.theme: Qogir
 Xcursor.size: 16
 
 !! Transparency (0-1):
-*.alpha: 0.95
-st.alphaOffset: 0.3
+*.alpha: 1.00
+!!st.alphaOffset: 0.3
 
 
 !! Set a default font and font size as below:

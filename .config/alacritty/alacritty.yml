@@ -1,6 +1,6 @@
 TERM: alacritty
 window:
-  opacity: 0.92
+  opacity: 1.00
   padding:
     x: 5
     y: 5
