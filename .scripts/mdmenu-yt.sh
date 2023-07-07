@@ -3,21 +3,17 @@
 # Simple dmenu script that takes a youtube video link and opens it up in mpv, just for the times where you don't want to
 # have to open up a terminal.
 
-if [ -f $HOME/.dmenurc ]; then
-    . $HOME/.dmenurc
-else
-    DMENU='dmenu -i'
-fi
-
 # TODO: Add the different resolution options and options for playlists as well.
 #       Choose what resolution to play the video in
 
-# Using a weird method to launch an empty dmenu prompt
-# old_link="$($DMENU -p "Video Link: " < ~/.scripts/WIP)"
+# Grab the YT video URL from the clipboard with xsel
+URL=$(xsel -b -o)
 
-# Using xclip to send link directly to mpv
-# mpv "$(xclip -out)" &> /dev/null &
-notify-send "Youtube Link Copied to MPV" -u normal && mpv --ytdl-format=22 "$(xsel -b -o)"
+# Get the video title
+title=$(curl -s "${URL}" | grep -Eo "<title>.*</title>" | sed "s/<title>//g; s/<\/title>//g; s/ - YouTube$//g")
+
+# Send notification and then send URL to MPV
+notify-send "Playing: $title" -u normal && mpv --ytdl-format=22 "$URL"
 
 # Store the links of videos played using this script to a file in my home directory
-echo "[720P]$(date): $(xclip -out)" >> /home/leosmith/mdmenu-links.txt
+echo "[720P]$(date) -- $title: $URL" >> /home/leosmith/mdmenu-links.txt
