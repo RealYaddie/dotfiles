@@ -16,6 +16,8 @@
 # result="$(obs-cli-leafac GetRecordingStatus -a "localhost:4444" -p "$(cat /home/leosmith/.config/obs-testing/pass.txt)")"
 # status="$(obs-cli-leafac GetRecordingStatus -a "localhost:4444" -p "$(cat /home/leosmith/.config/obs-testing/pass.txt)" |& sed -e 's/[ ",]//g' -e '/[][{}]/d' | head -n1 | cut -f2 -d ":")"
 
+# Password file for OBS Websocket
+key=/home/leosmith/.config/key_obs.txt
 # Get the recording status
 rstatus=$(obs-cli-leafac -a "localhost:4444" -p "$(cat /home/leosmith/.config/obs-testing/pass.txt)" --field 0.isRecording GetRecordingStatus)
 # Get the current recording time
