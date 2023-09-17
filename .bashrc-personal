@@ -4,7 +4,9 @@
 
 # Set MANPAGER
 # Get colorized output for `man` pages with `bat`
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# TODO: Figure out how to get bat working as manpager again. It's outputting weird ANSI escape characters in man pages
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANPAGER="less -R"
 # TODO: Figure out another method to let mouse scrolling work in man pages when they're viewed in a tmux session.
 # This line fixes the problem but breaks the preview PKGBUILD feature for all my AUR helpers
 # export LESS="--mouse --wheel-lines=3"
