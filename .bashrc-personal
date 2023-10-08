@@ -100,6 +100,9 @@ alias cmu-important="rclone copy -v /home/leosmith/Desktop/CMU\ Docs/Important\ 
 alias re="rclone sync -v /home/leosmith/Desktop/Real_Estate_Course GDrive-Text:Real_Estate_Stuff/Course"
 alias reti="rclone sync /home/leosmith/Videos/OBS\ Recordings/RETI/ og-mega:RETI -v"
 
+# Cover Letter and Resume Desktop Folder
+alias resume="rclone sync -v /home/leosmith/Desktop/Resume/ GDrive-Text:Important/Resume && rclone sync -v /home/leosmith/Desktop/Cover\ Letter/ GDrive-Text:Important/Cover\ Letter"
+
 # Mounts
 alias drive-misc="rclone --vfs-cache-mode writes mount GDrive-Text:Misc ~/Mounts/Drive\ Misc/ &"
 alias drive-uni-stuff="rclone --vfs-cache-mode writes mount GDrive-Text:Uni\ Stuff ~/Mounts/Drive\ Uni\ Stuff/ &"
